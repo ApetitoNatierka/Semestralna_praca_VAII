@@ -1,0 +1,49 @@
+#price-slider {
+    width: 15%;
+}
+
+.price-slider-container {
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+}
+
+.dropdown-header {
+    color: #202020;
+}
+
+.navbar {
+    background-color: #C0C0C0;
+}
+
+.form-check-input {
+    background-color: #E0E0E0;
+    border-color: #E0E0E0;
+}
+
+.form-check-label {
+    color: #A0A0A0;
+}
+
+img {
+    max-width: 3%;
+    padding-right: 10px;
+    height: auto;
+}
+
+.slider {
+    width: 50px;
+}
+
+form[role="search"] {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
