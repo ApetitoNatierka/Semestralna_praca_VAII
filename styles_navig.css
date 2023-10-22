@@ -19,8 +19,15 @@
     color: #202020;
 }
 
+
+
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #C0C0C0;
+    z-index: 100;
 }
 
 .form-check-input {
