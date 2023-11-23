@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SemestralnaPBazarSlnko.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/animal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/moto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sport.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sun-1789653_1280-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sun-1789653_1280.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navig.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign_in.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles_navig.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles_product.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles_sign_in.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles_startup.css" beforeDir="false" />
-    </list>
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie frameworku" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "a546b52b",
+    "git-widget-placeholder": "e9ddf491",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,8 +62,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700763678385</updated>
-      <workItem from="1700763680946" duration="6833000" />
+      <workItem from="1700763680946" duration="7189000" />
     </task>
+    <task id="LOCAL-00001" summary="pridanie frameworku">
+      <option name="closed" value="true" />
+      <created>1700770810053</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700770810053</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pridanie frameworku">
+      <option name="closed" value="true" />
+      <created>1700770834958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700770834958</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pridanie frameworku">
+      <option name="closed" value="true" />
+      <created>1700770992191</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700770992191</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +105,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -113,5 +116,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pridanie frameworku" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie frameworku" />
   </component>
 </project>
