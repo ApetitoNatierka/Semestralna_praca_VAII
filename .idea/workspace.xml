@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie frameworku" />
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="odstranenie navig html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/navig.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700763678385</updated>
-      <workItem from="1700763680946" duration="7189000" />
+      <workItem from="1700763680946" duration="8099000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -88,13 +91,56 @@
       <option name="project" value="LOCAL" />
       <updated>1700770992191</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pridanie frameworku">
+      <option name="closed" value="true" />
+      <created>1700771180968</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700771180968</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -105,11 +151,17 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
                 </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="MATCH_CASE" value="true" />
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
               </option>
             </State>
           </value>
@@ -119,6 +171,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pridanie frameworku" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie frameworku" />
+    <MESSAGE value="odstranenie navig html" />
+    <option name="LAST_COMMIT_MESSAGE" value="odstranenie navig html" />
   </component>
 </project>
