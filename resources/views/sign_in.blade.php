@@ -14,7 +14,8 @@
 <div class="login-container">
   <img src="{{ asset('images/sun-1789653_1280.png') }}" alt="Logo">
   <h1>Sign in</h1>
-  <form>
+  <form action="/sign_in" method="post">
+      @csrf
     <div class="form-group">
       <label for="email">e-mail:</label>
       <input type="email" id="email" name="email">

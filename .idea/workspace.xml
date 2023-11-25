@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pretvorenie na blade.php">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie textu Register do signin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sign_in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sign_in.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +206,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700763678385</updated>
       <workItem from="1700763680946" duration="8099000" />
-      <workItem from="1700845479168" duration="4940000" />
+      <workItem from="1700845479168" duration="6575000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -253,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700902924319</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="pridanie textu Register do signin">
+      <option name="closed" value="true" />
+      <created>1700903748930</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700903748930</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +339,7 @@
     <MESSAGE value="odstranenie navig html" />
     <MESSAGE value="pridanie html a css" />
     <MESSAGE value="pretvorenie na blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="pretvorenie na blade.php" />
+    <MESSAGE value="pridanie textu Register do signin" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie textu Register do signin" />
   </component>
 </project>
