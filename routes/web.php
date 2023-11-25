@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('sign_in');
+    return view('register');
 });
 
 Route::post('/sign_in', [UserController::class, 'sign_in']);
+Route::post('/go_register', [UserController::class, 'go_register']);
