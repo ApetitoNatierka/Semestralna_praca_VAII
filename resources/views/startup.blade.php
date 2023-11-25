@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <!--<link rel="icon" type="image/png" href="../../public/images/sun-1789653_1280.png"/>-->
     <link rel="icon" type="image/png" href="{{ asset('images/sun-1789653_1280.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -12,17 +11,14 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!--<script src="../../public/js/slider.js"></script>
-    <link rel="stylesheet" href="../../public/css/styles_startup.css">-->
     <script src="{{ asset('js/slider.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('css/styles_startup.css') }}">
-
 </head>
 <body>
+
 <nav class="navbar navbar-dark" aria-label="First navbar example">
     <div class="container-fluid">
-        <img src="{{ asset('images/sun-1789653_1280-1.png') }}" alt="BazarSlnko Logo">
-        <!--<img src="../../public/images/sun-1789653_1280-1.png" alt="BazarSlnko Logo">-->
+        <img src="{{ asset('images/sun-1789653_1280-1.png') }}" alt="BazarSlnko Logo"/>
         <a class="navbar-brand" href="#">BazarSlnko</a>
         <form role="search">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">

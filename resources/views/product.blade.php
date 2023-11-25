@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Title</title>
     <meta charset="UTF-8">
     <title>Title</title>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="../../public/images/sun-1789653_1280.png"/>
+    <title>Title</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/sun-1789653_1280.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="../../public/css/styles_navig.css">
-    <script src="../../public/js/slider.js"></script>
+    <script src="{{ asset('js/slider.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/styles_product.css') }}">
 </head>
 <body>
+
 <nav class="navbar navbar-dark" aria-label="First navbar example">
     <div class="container-fluid">
-        <img src="../../public/images/sun-1789653_1280-1.png" alt="BazarSlnko Logo"/>
+        <img src="{{ asset('images/sun-1789653_1280-1.png') }}" alt="BazarSlnko Logo"/>
         <a class="navbar-brand" href="#">BazarSlnko</a>
         <form role="search">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -122,10 +123,38 @@
     </div>
 </nav>
 
+<div class="p-5 text-center bg-body-tertiary">
+    <div class="container py-5">
+        <div class="d-flex flex-column align-items-center">
+            <h1 class="text-body-emphasis">Product name</h1>
+            <p class="col-lg-8 mx-auto lead">
+                Here will be some product description.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Ľavý stĺpec s textovými informáciami -->
+            <h2>Ďalšie informácie</h2>
+            <p>Ďalší text alebo obsah by mohol byť tu.</p>
+        </div>
+        <div class="col-md-6">
+            <div class="gallery">
+                <div class="slider">
+                    <div class="slide"><img src="{{ asset('images/moto.png') }}" alt="Image 1"/></div>
+                    <div class="slide"><img src="{{ asset('images/animal.png') }}" alt="Image 2"></div>
+                    <div class="slide"><img src="{{ asset('images/sport.png') }}" alt="Image 3"></div>
+                </div>
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
 
-
-<script>
-    src="slider.js"
-</script>
