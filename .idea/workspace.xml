@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie getterov na views">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie prooducts html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sign_in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sign_in.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -206,7 +206,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700763678385</updated>
       <workItem from="1700763680946" duration="8099000" />
-      <workItem from="1700845479168" duration="12935000" />
+      <workItem from="1700845479168" duration="14577000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -296,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700920636628</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="pridanie prooducts html">
+      <option name="closed" value="true" />
+      <created>1700922520577</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700922520577</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +383,7 @@
     <MESSAGE value="pridanie UserControlleru" />
     <MESSAGE value="pridanie register stránky" />
     <MESSAGE value="pridanie getterov na views" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie getterov na views" />
+    <MESSAGE value="pridanie prooducts html" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie prooducts html" />
   </component>
 </project>

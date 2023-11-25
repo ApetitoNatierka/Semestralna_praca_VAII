@@ -31,4 +31,8 @@ Route::get('/product', function () {
     return view('product');
 });
 
+Route::get('/products', function () {
+    return view('products');
+});
+
 Route::post('/sign_in', [UserController::class, 'sign_in']);

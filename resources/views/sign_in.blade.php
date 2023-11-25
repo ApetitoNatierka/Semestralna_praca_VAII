@@ -27,7 +27,9 @@
     <button type="submit">Sign in</button>
   </form>
     <div class="registration-text">
-        <p>New in Bazar Slnko? Let's register!</p>
+        <a href="/register">
+            <p>New in Bazar Slnko? Let's register!</p>
+        </a>
     </div>
 </div>
 </body>
