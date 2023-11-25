@@ -32,5 +32,3 @@ Route::get('/product', function () {
 });
 
 Route::post('/sign_in', [UserController::class, 'sign_in']);
-Route::post('/go_register', [UserController::class, 'go_register']);
-Route::post('/register', [UserController::class, 'register']);

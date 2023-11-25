@@ -14,9 +14,4 @@ class UserController extends Controller
         ]);
         return redirect('/');
     }
-
-    public function go_register(): string
-    {
-        return "You are about to register";
-    }
 }
