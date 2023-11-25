@@ -55,3 +55,16 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+form {
+    margin-top: 20px;
+}
+
+.registration-text {
+    margin-top: 20px;
+}
+
+.registration-text p {
+    font-size: 14px;
+    color: #555;
+}
