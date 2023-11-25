@@ -14,8 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//getters
 Route::get('/', function () {
+    return view('startup');
+});
+
+Route::get('/sign_in', function () {
+    return view('sign_in');
+});
+
+Route::get('/register', function () {
     return view('register');
+});
+
+Route::get('/product', function () {
+    return view('product');
 });
 
 Route::post('/sign_in', [UserController::class, 'sign_in']);
