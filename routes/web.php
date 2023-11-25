@@ -32,7 +32,12 @@ Route::get('/product', function () {
 });
 
 Route::get('/products', function () {
-    return view('products');
+    $products = [
+        ['name' => 'product1'],
+        ['name' => 'product2'],
+        ['name' => 'product3']
+    ];
+    return view('products', ['products' => $products]);
 });
 
 Route::post('/sign_in', [UserController::class, 'sign_in']);

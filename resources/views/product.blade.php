@@ -21,7 +21,7 @@
 <nav class="navbar navbar-dark" aria-label="First navbar example">
     <div class="container-fluid">
         <img src="{{ asset('images/sun-1789653_1280-1.png') }}" alt="BazarSlnko Logo"/>
-        <a class="navbar-brand" href="#">BazarSlnko</a>
+        <a class="navbar-brand" href="/">BazarSlnko</a>
         <form role="search">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>

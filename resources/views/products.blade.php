@@ -15,13 +15,13 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="{{ asset('js/slider.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('css/styles_navig.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles_products.css') }}">
 </head>
 <body>
-
 <nav class="navbar navbar-dark" aria-label="First navbar example">
     <div class="container-fluid">
         <img src="{{ asset('images/sun-1789653_1280-1.png') }}" alt="BazarSlnko Logo"/>
-        <a class="navbar-brand" href="#">BazarSlnko</a>
+        <a class="navbar-brand" href="/">BazarSlnko</a>
         <form role="search">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
@@ -123,24 +123,37 @@
     </div>
 </nav>
 
-<div class="inzeraty inzeratyflex">
-    <div class="inzeratynadpis">
-        <a href="/">
-            <img src="{{ asset('images/sun-1789653_1280.png') }}" class="obrazek" alt="jazvečík trpasličí" width="140" height="105">
-        </a>
-        <h2 class="nadpis">
-            <a href="/">jazvečík trpasličí</a>
-        </h2><span class="velikost10"> - <span title="TOP 21x Platí do 2.1. 2024" class="ztop">TOP</span> - [25.11. 2023]</span><br>
-        <div class="popis">Ponúkam na predaj 8 týždňové šteniatká trpasličích jazvečíkov zriedkavej piebald a piebald-merle farby! Otecko čoko-brindle piebald farby, mamina izabela-merle farby!Rodičov vlastníme, možnosť ich vidieť! Sú 1x očkované, 5x  odčervené a začipované s vetrinárnim preukazom! Sú ihneď k odberu! Papajú s ...
-        </div><br><br>
+
+
+
+@for($i = 0; $i < count($products); $i++)
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{$products[$i]['name']}}</h3>
+                </div>
+                <div class="background-image" style="background-image: url('{{ asset('images/moto.png') }}');"></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{$products[$i]['name']}}</h3>
+                </div>
+                <div class="background-image" style="background-image: url('{{ asset('images/animal.png') }}');"></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{$products[$i]['name']}}</h3>
+                </div>
+                <div class="background-image" style="background-image: url('{{ asset('images/sun-1789653_1280-1.png') }}');"></div>
+            </div>
+        </div>
     </div>
-    <div class="inzeratycena"><b>   290 €</b></div>
-    <div class="inzeratylok">Dunajská Streda<br>930 28</div>
-    <div class="inzeratyview">2728 x</div>
-    <div class="inzeratyakce">
-        <span onclick="odeslatakci('spam','158225948');return false;" class="akce paction">Označiť zlý inzerát</span> <span onclick="odeslatakci('category','158225948');return false;" class="akce paction">Chybnú kategóriu</span> <span onclick="odeslatakci('rating','413581','2304262','Attila');return false;" class="akce paction">Ohodnotiť užívateľa</span> <span onclick="odeslatakci('edit','158225948');return false;" class="akce paction">Zmazať/Upraviť/Topovať</span>
-    </div>
-</div>
+    @endfor
 
 </body>
 </html>
