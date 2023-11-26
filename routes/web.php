@@ -33,3 +33,5 @@ Route::get('/product', [ProductController::class, 'get_product']);
 Route::get('/products', [ProductController::class, 'get_products']);
 
 Route::get('/new_product', [ProductController::class, 'get_new_product']);
+
+Route::post('/new_product', [ProductController::class, 'new_product']);

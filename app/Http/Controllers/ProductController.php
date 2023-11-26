@@ -35,4 +35,17 @@ class ProductController extends Controller
     public function get_new_product() {
         return view('new_product');
     }
+
+    public function new_product(Request $request) {
+
+        $incoming_fields_ = $request->validate([
+            'title' => ['required', 'min:3', 'max:30'],
+            'price' => ['required'],
+            'description' => ['required', 'min:1', 'max:1000'],
+            'kraj' => ['required'],
+            'category' => ['required'],
+        ]);
+
+        return redirect('/');
+    }
 }
