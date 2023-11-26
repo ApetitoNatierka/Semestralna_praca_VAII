@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,26 +32,6 @@ Route::get('/product', function () {
     return view('product');
 });
 
-Route::get('/products', function () {
-    $products = [
-        ['name' => 'samssung galaxy Z Flip 4'],
-        ['name' => 'product2'],
-        ['name' => 'product3'],
-        ['name' => 'product4'],
-        ['name' => 'product1'],
-        ['name' => 'product10000000'],
-        ['name' => 'product2'],
-        ['name' => 'product3'],
-        ['name' => 'product4'],
-        ['name' => 'product1'],
-        ['name' => 'product10000000'],
-        ['name' => 'product2'],
-        ['name' => 'product3'],
-        ['name' => 'product4'],
-        ['name' => 'product1'],
-        ['name' => 'product1']
-    ];
-    return view('products', ['products' => $products]);
-});
+Route::get('/products', [ProductController::class, 'index']);
 
 Route::post('/sign_in', [UserController::class, 'sign_in']);

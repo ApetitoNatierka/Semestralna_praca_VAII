@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie rôzneho množstva produktov">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" afterDir="false" />
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie ProductControlleru">
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +211,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700763678385</updated>
       <workItem from="1700763680946" duration="8099000" />
-      <workItem from="1700845479168" duration="29780000" />
+      <workItem from="1700845479168" duration="30111000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -342,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700996668513</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="pridanie ProductControlleru">
+      <option name="closed" value="true" />
+      <created>1700997751790</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700997751790</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,6 +433,7 @@
     <MESSAGE value="produkty" />
     <MESSAGE value="refractor navigator do samostatneho file" />
     <MESSAGE value="pridanie rôzneho množstva produktov" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie rôzneho množstva produktov" />
+    <MESSAGE value="pridanie ProductControlleru" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie ProductControlleru" />
   </component>
 </project>
