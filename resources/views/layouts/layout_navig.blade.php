@@ -23,7 +23,7 @@
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
         <a href="/new_product">
-            <label class="pridat_inzerat" >Pridať inzerát </label>
+            <label class="pridat_inzerat" >Pridať inzerát</label>
         </a>
         <a class="user" href="/sign_in">
             <button class="navbar-toggler ms-auto user-icon-button" style="margin-left: 10px;">
