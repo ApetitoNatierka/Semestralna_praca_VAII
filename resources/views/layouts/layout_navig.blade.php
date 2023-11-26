@@ -22,9 +22,11 @@
         <form role="search">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
-        <button class="navbar-toggler ms-auto user-icon-button" style="margin-left: 10px;">
+        <a class="user" href="/sign_in">
+            <button class="navbar-toggler ms-auto user-icon-button" style="margin-left: 10px;">
             <i class="fas fa-user"></i>
         </button>
+        </a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
