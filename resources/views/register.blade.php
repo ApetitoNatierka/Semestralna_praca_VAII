@@ -22,18 +22,23 @@
                 <h1 class="fw-bold mb-0 fs-2">Register for free</h1></div>
 
             <div class="modal-body p-5 pt-0">
-                <form class="">
+                <form class="" action="/register" method="POST">
+                    @csrf
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <input type="text" class="form-control rounded-3" id="username" placeholder="username" name="username">
+                        <label for="username">Username</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input type="email" class="form-control rounded-3" id="email" placeholder="name@example.com" name="email">
+                        <label for="email">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Repeat password</label>
+                        <input type="password" class="form-control rounded-3" id="password" placeholder="Password" name="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="repeat_password" placeholder="Password" name="repeat_password">
+                        <label for="repeat_password">Repeat password</label>
                     </div>
                     <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Register</button>
                     <small class="text-body-secondary">By clicking Register, you agree to the terms of use.</small>

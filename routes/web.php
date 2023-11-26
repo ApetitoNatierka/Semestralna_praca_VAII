@@ -25,6 +25,9 @@ Route::get('/register', [UserController::class, 'get_register']);
 
 Route::post('/sign_in', [UserController::class, 'sign_in']);
 
+Route::post('/register', [UserController::class, 'register']);
+
+
 Route::get('/product', [ProductController::class, 'get_product']);
 
 Route::get('/products', [ProductController::class, 'get_products']);

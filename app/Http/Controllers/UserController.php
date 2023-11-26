@@ -12,7 +12,19 @@ class UserController extends Controller
             'email' => ['required', 'email'],
             'password' => ['required', 'min:8', 'max:200'],
         ]);
-        return redirect('/');
+        return redirect('/')->with('mssg', 'Signed in');
+    }
+
+    public function register(Request $request): string
+    {
+        $incoming_fields_ = $request->validate([
+            'username' => ['required', 'min:3', 'max:15'],
+            'email' => ['required', 'email'],
+            'password' => ['required', 'min:3', 'max:200'],
+            'repeat_password' => ['required', 'min:3', 'max:200'],
+        ]);
+
+        return redirect('/')->with('mssg', 'Sucessfully registrated');
     }
 
     public function get_sign_in()
