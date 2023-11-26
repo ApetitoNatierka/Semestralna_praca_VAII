@@ -31,4 +31,8 @@ class ProductController extends Controller
     public function get_product() {
         return view('product');
     }
+
+    public function get_new_product() {
+        return view('new_product');
+    }
 }
