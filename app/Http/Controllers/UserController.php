@@ -14,4 +14,15 @@ class UserController extends Controller
         ]);
         return redirect('/');
     }
+
+    public function get_sign_in()
+    {
+        return view('sign_in');
+    }
+
+    public function get_register()
+    {
+        return view('register');
+    }
+
 }

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function index() {
+    public function get_products() {
         $products = [
             ['name' => 'samssung galaxy Z Flip 4'],
             ['name' => 'product2'],
@@ -26,5 +26,9 @@ class ProductController extends Controller
             ['name' => 'product1']
         ];
         return view('products', ['products' => $products]);
+    }
+
+    public function get_product() {
+        return view('product');
     }
 }

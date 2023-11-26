@@ -15,23 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//getters
 Route::get('/', function () {
     return view('startup');
 });
 
-Route::get('/sign_in', function () {
-    return view('sign_in');
-});
+Route::get('/sign_in',  [UserController::class, 'get_sign_in']);
 
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::get('/product', function () {
-    return view('product');
-});
-
-Route::get('/products', [ProductController::class, 'index']);
+Route::get('/register', [UserController::class, 'get_register']);
 
 Route::post('/sign_in', [UserController::class, 'sign_in']);
+
+Route::get('/product', [ProductController::class, 'get_product']);
+
+Route::get('/products', [ProductController::class, 'get_products']);

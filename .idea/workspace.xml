@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie ProductControlleru">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie ProductControlleru a metody index">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +214,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700763678385</updated>
       <workItem from="1700763680946" duration="8099000" />
-      <workItem from="1700845479168" duration="30111000" />
+      <workItem from="1700845479168" duration="31860000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -349,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700997751790</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="pridanie ProductControlleru a metody index">
+      <option name="closed" value="true" />
+      <created>1700998131629</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1700998131629</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,6 +445,7 @@
     <MESSAGE value="refractor navigator do samostatneho file" />
     <MESSAGE value="pridanie rôzneho množstva produktov" />
     <MESSAGE value="pridanie ProductControlleru" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie ProductControlleru" />
+    <MESSAGE value="pridanie ProductControlleru a metody index" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie ProductControlleru a metody index" />
   </component>
 </project>
