@@ -22,9 +22,15 @@
         <form role="search">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
-        <a href="/new_product">
-            <label class="pridat_inzerat" >Pridať inzerát</label>
-        </a>
+        @auth
+            <a href="/new_product">
+                <label class="pridat_inzerat" >Pridať inzerát</label>
+            </a>
+        @else
+            <a href="/sign_in">
+                <label class="pridat_inzerat" >Pridať inzerát</label>
+            </a>
+        @endauth
         <a class="user" href="/sign_in">
             <button class="navbar-toggler ms-auto user-icon-button" style="margin-left: 10px;">
             <i class="fas fa-user"></i>

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie funkcie formuláru">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="upravenie labelu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +209,8 @@
       <updated>1700763678385</updated>
       <workItem from="1700763680946" duration="8099000" />
       <workItem from="1700845479168" duration="32047000" />
-      <workItem from="1701002778001" duration="9478000" />
+      <workItem from="1701002778001" duration="9746000" />
+      <workItem from="1701103898884" duration="3124000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -401,7 +404,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701013717166</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="upravenie navigatora">
+      <option name="closed" value="true" />
+      <created>1701014484302</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1701014484302</updated>
+    </task>
+    <task id="LOCAL-00026" summary="upravenie labelu">
+      <option name="closed" value="true" />
+      <created>1701014509197</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1701014509197</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,6 +511,8 @@
     <MESSAGE value="jemne upravy" />
     <MESSAGE value="formulár pre nové produkty" />
     <MESSAGE value="pridanie funkcie formuláru" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie funkcie formuláru" />
+    <MESSAGE value="upravenie navigatora" />
+    <MESSAGE value="upravenie labelu" />
+    <option name="LAST_COMMIT_MESSAGE" value="upravenie labelu" />
   </component>
 </project>

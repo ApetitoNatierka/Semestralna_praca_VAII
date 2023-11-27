@@ -25,8 +25,8 @@
                 <form class="" action="/register" method="POST">
                     @csrf
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control rounded-3" id="username" placeholder="username" name="username">
-                        <label for="username">Username</label>
+                        <input type="text" class="form-control rounded-3" id="name" placeholder="name" name="name">
+                        <label for="name">Username</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control rounded-3" id="email" placeholder="name@example.com" name="email">
@@ -37,8 +37,8 @@
                         <label for="password">Password</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control rounded-3" id="repeat_password" placeholder="Password" name="repeat_password">
-                        <label for="repeat_password">Repeat password</label>
+                        <input type="password" class="form-control rounded-3" id="password_confirmation" placeholder="Password" name="password_confirmation">
+                        <label for="password_confirmation">Repeat password</label>
                     </div>
                     <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Register</button>
                     <small class="text-body-secondary">By clicking Register, you agree to the terms of use.</small>
