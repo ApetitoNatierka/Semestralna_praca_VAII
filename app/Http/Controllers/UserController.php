@@ -5,16 +5,22 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use function Laravel\Prompts\password;
 
 class UserController extends Controller
 {
     public function sign_in(Request $request): string
     {
         $incoming_fields_ = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required', 'min:8', 'max:200'],
+            'loginname' => ['required'],
+            'loginpassword' => ['required'],
         ]);
-        return redirect('/')->with('mssg', 'Signed in');
+
+        if (auth()->attempt(['name' => $incoming_fields_['loginname'], 'password' => $incoming_fields_['loginpassword']])) {
+            $request->session()->regenerate();
+        }
+
+        return redirect('/');
     }
 
     public function register(Request $request): string
@@ -30,6 +36,12 @@ class UserController extends Controller
         auth()->login($user);
 
         return redirect('/')->with('mssg', 'Sucessfully registrated');
+    }
+
+    public function logout()
+    {
+        auth()->logout();
+        return redirect('/');
     }
 
     public function get_sign_in()

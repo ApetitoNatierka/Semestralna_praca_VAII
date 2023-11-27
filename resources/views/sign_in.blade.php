@@ -17,12 +17,12 @@
   <form action="/sign_in" method="post">
       @csrf
     <div class="form-group">
-      <label for="email">e-mail:</label>
-      <input type="email" id="email" name="email">
+      <label for="loginname">username:</label>
+      <input type="text" id="loginname" name="loginname">
     </div>
     <div class="form-group">
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password">
+      <label for="loginpassword">Password:</label>
+      <input type="password" id="loginpassword" name="loginpassword">
     </div>
     <button type="submit">Sign in</button>
   </form>
