@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="nove metody do UserController">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="novy model Products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_11_26_130820_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_11_26_130820_create_products_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +210,7 @@
       <workItem from="1701002778001" duration="9746000" />
       <workItem from="1701103898884" duration="4141000" />
       <workItem from="1701117623168" duration="491000" />
-      <workItem from="1701189740309" duration="2618000" />
+      <workItem from="1701189740309" duration="4845000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -437,7 +436,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701118079585</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="novy model Products">
+      <option name="closed" value="true" />
+      <created>1701192703277</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1701192703277</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,6 +539,7 @@
     <MESSAGE value="upravenie labelu" />
     <MESSAGE value="autorizacia" />
     <MESSAGE value="nove metody do UserController" />
-    <option name="LAST_COMMIT_MESSAGE" value="nove metody do UserController" />
+    <MESSAGE value="novy model Products" />
+    <option name="LAST_COMMIT_MESSAGE" value="novy model Products" />
   </component>
 </project>

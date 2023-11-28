@@ -41,7 +41,7 @@ class ProductController extends Controller
 
         $incoming_fields_ = $request->validate([
             'title' => ['required', 'min:3', 'max:30'],
-            'price' => ['required'],
+            'price' => ['required', 'integer'],
             'description' => ['required', 'min:1', 'max:1000'],
             'kraj' => ['required'],
             'category' => ['required'],
