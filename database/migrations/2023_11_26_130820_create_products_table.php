@@ -16,7 +16,10 @@ return new class extends Migration
             $table->timestamps();
             $table->string('title');
             $table->double('price');
-            $table->string('description');
+            $table->longText('description');
+            $table->string('kraj');
+            $table->string('category');
+            $table->foreignId('user_id')->constrained();
         });
     }
 

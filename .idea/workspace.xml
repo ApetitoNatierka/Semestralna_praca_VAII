@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="autorizacia">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="nove metody do UserController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sign_in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sign_in.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2023_11_26_130820_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_11_26_130820_create_products_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +210,8 @@
       <workItem from="1700845479168" duration="32047000" />
       <workItem from="1701002778001" duration="9746000" />
       <workItem from="1701103898884" duration="4141000" />
+      <workItem from="1701117623168" duration="491000" />
+      <workItem from="1701189740309" duration="2618000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -429,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701107459163</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="nove metody do UserController">
+      <option name="closed" value="true" />
+      <created>1701118079585</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701118079585</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,6 +531,7 @@
     <MESSAGE value="upravenie navigatora" />
     <MESSAGE value="upravenie labelu" />
     <MESSAGE value="autorizacia" />
-    <option name="LAST_COMMIT_MESSAGE" value="autorizacia" />
+    <MESSAGE value="nove metody do UserController" />
+    <option name="LAST_COMMIT_MESSAGE" value="nove metody do UserController" />
   </component>
 </project>
