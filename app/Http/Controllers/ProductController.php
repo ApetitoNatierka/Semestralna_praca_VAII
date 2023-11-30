@@ -23,8 +23,8 @@ class ProductController extends Controller
         return view('product', ['product' => $product]);
     }
 
-    public function get_edit_product() {
-        return view('new_product', )
+    public function get_edit_product(Products $product) {
+        return view('new_product', ['product' => $product]);
     }
 
     public function get_new_product() {

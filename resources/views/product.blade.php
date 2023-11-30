@@ -33,8 +33,8 @@
         </div>
     </div>
     <div>
-        <a href="/edit_product">
-            <p class="edit">Edit: {{$product->price}} $</p>
+        <a href="/edit_product/{{$product->id}}">
+            <p class="edit">Edit</p>
         </a>
 
     </div>
