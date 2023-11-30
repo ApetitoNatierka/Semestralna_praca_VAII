@@ -23,6 +23,15 @@
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
         @auth
+            <a href="">
+                <label class="moje-inzeraty" >Moje inzeráty</label>
+            </a>
+        @else
+            <a href="">
+                <label class="moje-inzeraty" >Moje inzeráty</label>
+            </a>
+        @endauth
+        @auth
             <a href="/new_product">
                 <label class="pridat_inzerat" >Pridať inzerát</label>
             </a>

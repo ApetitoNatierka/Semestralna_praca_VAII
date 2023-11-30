@@ -32,7 +32,7 @@ Route::post('/logout', [UserController::class, 'logout']);
 
 Route::get('/product', [ProductController::class, 'get_product']);
 
-Route::get('/products', [ProductController::class, 'get_products']);
+Route::get('/products_all', [ProductController::class, 'get_products_all']);
 
 Route::get('/new_product', [ProductController::class, 'get_new_product']);
 

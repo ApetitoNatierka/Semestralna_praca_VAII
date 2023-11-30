@@ -54,3 +54,11 @@ form[role="search"] {
     display: flex;
     justify-content: center;
 }
+
+.moje-inzeraty {
+    padding-right: 20px;
+}
+
+.pridat_inzerat {
+    padding-right: 20px;
+}

@@ -7,25 +7,9 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function get_products() {
-        $products = [
-            ['name' => 'samssung galaxy Z Flip 4'],
-            ['name' => 'product2'],
-            ['name' => 'product3'],
-            ['name' => 'product4'],
-            ['name' => 'product1'],
-            ['name' => 'product10000000'],
-            ['name' => 'product2'],
-            ['name' => 'product3'],
-            ['name' => 'product4'],
-            ['name' => 'product1'],
-            ['name' => 'product10000000'],
-            ['name' => 'product2'],
-            ['name' => 'product3'],
-            ['name' => 'product4'],
-            ['name' => 'product1'],
-            ['name' => 'product1']
-        ];
+    public function get_products_all() {
+        $products = Products::all();
+
         return view('products', ['products' => $products]);
     }
 
