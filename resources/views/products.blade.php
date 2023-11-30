@@ -14,12 +14,14 @@
 
                     <div class="col">
                         @if($i < $productCount)
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{$products[$i]['name']}}</h3>
-                                <div class="background-image" style="background-image: url('{{ asset('images/sun-1789653_1280.png') }}');"></div>
+                            <a href="/product/{{$products[$i]['id']}}">
+                                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative">
+                                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{$products[$i]['name']}}</h3>
+                                        <div class="background-image" style="background-image: url('{{ asset('images/sun-1789653_1280.png') }}');"></div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         @else
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" style="visibility: hidden; height: 0;">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">

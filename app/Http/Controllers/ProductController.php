@@ -7,14 +7,24 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    public function get_users_products() {
+        $products = auth()->user()->usersProducts()->latest()->get();
+
+        return view('products', ['products' => $products]);
+    }
+
     public function get_products_all() {
         $products = Products::all();
 
         return view('products', ['products' => $products]);
     }
 
-    public function get_product() {
-        return view('product');
+    public function get_product(Products $product) {
+        return view('product', ['product' => $product]);
+    }
+
+    public function get_edit_product() {
+        return view('new_product', )
     }
 
     public function get_new_product() {

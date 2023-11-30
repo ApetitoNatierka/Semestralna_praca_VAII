@@ -4,9 +4,9 @@
     <div class="p-5 text-center bg-body-tertiary">
         <div class="container py-5">
             <div class="d-flex flex-column align-items-center">
-                <h1 class="text-body-emphasis">Product name</h1>
+                <h1 class="text-body-emphasis"> {{$product->title}}</h1>
                 <p class="col-lg-8 mx-auto lead">
-                    Here will be some product description.
+                   {{$product->description}}
                 </p>
             </div>
         </div>
@@ -15,9 +15,9 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-6">
-                <!-- Ľavý stĺpec s textovými informáciami -->
-                <h2>Ďalšie informácie</h2>
-                <p>Ďalší text alebo obsah by mohol byť tu.</p>
+                <p class="cena">Cena: {{$product->price}} $</p>
+                <p class="kraj">Kraj: {{$product->kraj}} </p>
+                <p class="category">Category: {{$product->category}} </p>
             </div>
             <div class="col-md-6">
                 <div class="gallery">
@@ -31,5 +31,11 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div>
+        <a href="/edit_product">
+            <p class="edit">Edit: {{$product->price}} $</p>
+        </a>
+
     </div>
 @endsection

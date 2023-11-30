@@ -30,10 +30,14 @@ Route::post('/register', [UserController::class, 'register']);
 Route::post('/logout', [UserController::class, 'logout']);
 
 
-Route::get('/product', [ProductController::class, 'get_product']);
+Route::get('/product/{product}', [ProductController::class, 'get_product']);
 
 Route::get('/products_all', [ProductController::class, 'get_products_all']);
 
+Route::get('/products_user', [ProductController::class, 'get_users_products']);
+
 Route::get('/new_product', [ProductController::class, 'get_new_product']);
+
+Route::get('/edit_product/{product}', [ProductController::class, 'get_edit_product']);
 
 Route::post('/new_product', [ProductController::class, 'new_product']);

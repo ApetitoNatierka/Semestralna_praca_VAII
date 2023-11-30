@@ -23,11 +23,12 @@
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
         @auth
-            <a href="">
+            <a href="/products_user">
+                @csrf
                 <label class="moje-inzeraty" >Moje inzeráty</label>
             </a>
         @else
-            <a href="">
+            <a href="/sign_in">
                 <label class="moje-inzeraty" >Moje inzeráty</label>
             </a>
         @endauth
