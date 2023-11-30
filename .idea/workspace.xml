@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="neviem co som robil ale nieco z upravou produktov" />
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie editacie productu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,6 +212,7 @@
       <workItem from="1701331328624" duration="763000" />
       <workItem from="1701338118438" duration="2275000" />
       <workItem from="1701347708700" duration="3412000" />
+      <workItem from="1701365360598" duration="567000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -469,7 +470,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701351138138</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="pridanie editacie productu">
+      <option name="closed" value="true" />
+      <created>1701365902534</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1701365902534</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie html a css" />
     <MESSAGE value="pretvorenie na blade.php" />
     <MESSAGE value="pridanie textu Register do signin" />
     <MESSAGE value="pridanie UserControlleru" />
@@ -565,6 +573,7 @@
     <MESSAGE value="novy model Products" />
     <MESSAGE value="pridanie validacie integra" />
     <MESSAGE value="neviem co som robil ale nieco z upravou produktov" />
-    <option name="LAST_COMMIT_MESSAGE" value="neviem co som robil ale nieco z upravou produktov" />
+    <MESSAGE value="pridanie editacie productu" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie editacie productu" />
   </component>
 </project>
