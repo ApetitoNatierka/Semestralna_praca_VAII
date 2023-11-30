@@ -15,6 +15,7 @@ class ProductController extends Controller
 
     public function get_products_all() {
         $products = Products::all();
+
         return view('products', ['products' => $products]);
     }
 
