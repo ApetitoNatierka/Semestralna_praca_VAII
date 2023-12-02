@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles_new_product.css') }}">
 
 
-    @if (!empty($_GET))
+    @if (empty($_GET))
         <div class="container-fluid p-4 mt-5">
     <form class="row g-3" action="/new_product" method="POST">
         @csrf

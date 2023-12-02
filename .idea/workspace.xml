@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie editacie productu">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="vyhladavanie cez search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/startup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/new_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/new_product.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +217,7 @@
       <workItem from="1701347708700" duration="3412000" />
       <workItem from="1701365360598" duration="2135000" />
       <workItem from="1701367680903" duration="196000" />
-      <workItem from="1701532096539" duration="7013000" />
+      <workItem from="1701532096539" duration="7812000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -551,7 +547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701536364782</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="vyhladavanie cez search">
+      <option name="closed" value="true" />
+      <created>1701540004760</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1701540004760</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +626,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pretvorenie na blade.php" />
     <MESSAGE value="pridanie textu Register do signin" />
     <MESSAGE value="pridanie UserControlleru" />
     <MESSAGE value="pridanie register stránky" />
@@ -647,6 +650,7 @@
     <MESSAGE value="pridanie validacie integra" />
     <MESSAGE value="neviem co som robil ale nieco z upravou produktov" />
     <MESSAGE value="pridanie editacie productu" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie editacie productu" />
+    <MESSAGE value="vyhladavanie cez search" />
+    <option name="LAST_COMMIT_MESSAGE" value="vyhladavanie cez search" />
   </component>
 </project>
