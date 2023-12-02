@@ -19,8 +19,9 @@
     <div class="container-fluid">
         <img src="{{ asset('images/sun-1789653_1280-1.png') }}" alt="BazarSlnko Logo"/>
         <a class="navbar-brand" href="/">BazarSlnko</a>
-        <form role="search">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <form role="search" action="/products_search" method="POST">
+            @csrf
+            <input class="form-control" type="search" name="search" placeholder="Search" aria-label="Search">
         </form>
         @auth
             <a href="/products_user">

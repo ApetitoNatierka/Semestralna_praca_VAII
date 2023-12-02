@@ -40,10 +40,10 @@
         @endif
 
         @if(auth()->id() == $product->user_id)
-                <form action="/delete_product" method="POST">
+                <form action="/delete_product/{{$product->id}}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <p class="delete">Delete</p>
+                    <button class="delete">Delete</button>
                 </form>
         @endif
     </div>

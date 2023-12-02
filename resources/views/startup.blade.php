@@ -7,7 +7,7 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
-                        <a href="/">
+                        <a href="/products_all">
                             <img class="bd-placeholder-img card-img-top" src="{{ asset('images/moto.png') }}" alt="Moto">
                         <div class="card-body">
                             <p class="category-link text-center">Moto</p>
@@ -17,8 +17,8 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <a href="/">
-                        <img class="bd-placeholder-img card-img-top" src="{{ asset('images/animal.png') }}" alt="Moto">
+                        <a href="/products_all">
+                        <img class="bd-placeholder-img card-img-top" src="{{ asset('images/animal.png') }}" alt="Animal">
                         <div class="card-body">
                             <p class="category-link text-center">Animal</p>
                         </div>
@@ -27,8 +27,8 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <a href="/">
-                            <img class="bd-placeholder-img card-img-top" src="{{ asset('images/sport.png') }}" alt="Moto">
+                        <a href="/products_all">
+                            <img class="bd-placeholder-img card-img-top" src="{{ asset('images/sport.png') }}" alt="Sport">
                         <div class="card-body">
                             <p class="category-link text-center">Sport</p>
                         </div>

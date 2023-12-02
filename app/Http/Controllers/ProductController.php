@@ -81,4 +81,22 @@ class ProductController extends Controller
 
         return redirect('/');
     }
+
+    public function delete_product(Products $product) {
+
+        if(auth()->id() === $product['user_id']) {
+            $product->delete($product);
+        }
+
+        return redirect('/');
+    }
+
+    public function get_products_search(Request $request) {
+        $searchTerm = $request->input('search');
+
+        $products = Products::where('description', 'like', '%' . $searchTerm . '%')->orWhere('title', 'like', '%' . $searchTerm . '%')->get();
+
+        return view('products', ['products' => $products]);
+    }
+
 }
