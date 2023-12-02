@@ -23,6 +23,10 @@ class ProductController extends Controller
     }
 
     public function get_edit_product(Products $product) {
+        if(auth()->id() !== $product['user_id']) {
+            redirect('/');
+        }
+
         return view('new_product', ['product' => $product]);
     }
 
@@ -48,6 +52,32 @@ class ProductController extends Controller
         $incoming_fields_['user_id'] = auth()->id();
 
         Products::create($incoming_fields_);
+
+        return redirect('/');
+    }
+
+    public function edit_product(Products $product, Request $request) {
+
+        if(auth()->id() !== $product['user_id']) {
+            redirect('/');
+        }
+
+        $incoming_fields_ = $request->validate([
+            'title' => ['required', 'min:3', 'max:30'],
+            'price' => ['required', 'integer'],
+            'description' => ['required', 'min:1', 'max:1000'],
+            'kraj' => ['required'],
+            'category' => ['required'],
+        ]);
+
+        $incoming_fields_['title'] = strip_tags($incoming_fields_['title']);
+        $incoming_fields_['price'] = strip_tags($incoming_fields_['price']);
+        $incoming_fields_['description'] = strip_tags($incoming_fields_['description']);
+        $incoming_fields_['kraj'] = strip_tags($incoming_fields_['kraj']);
+        $incoming_fields_['category'] = strip_tags($incoming_fields_['category']);
+        $incoming_fields_['user_id'] = auth()->id();
+
+        $product->update($incoming_fields_);
 
         return redirect('/');
     }

@@ -40,4 +40,8 @@ Route::get('/new_product', [ProductController::class, 'get_new_product']);
 
 Route::get('/edit_product/{product}', [ProductController::class, 'get_edit_product']);
 
+Route::delete('/delete_product/{product}', [ProductController::class, 'delete_product']);
+
+Route::put('/edit_product/{product}', [ProductController::class, 'edit_product']);
+
 Route::post('/new_product', [ProductController::class, 'new_product']);

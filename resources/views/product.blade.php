@@ -33,9 +33,18 @@
         </div>
     </div>
     <div>
+        @if(auth()->id() == $product->user_id)
         <a href="/edit_product/{{$product->id}}">
             <p class="edit">Edit</p>
         </a>
+        @endif
 
+        @if(auth()->id() == $product->user_id)
+                <form action="/delete_product" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <p class="delete">Delete</p>
+                </form>
+        @endif
     </div>
 @endsection
