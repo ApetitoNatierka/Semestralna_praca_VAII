@@ -99,4 +99,14 @@ class ProductController extends Controller
         return view('products', ['products' => $products]);
     }
 
+    public function get_products_by_price(Request $request) {
+        $minPrice = $request->input('min_price');
+        $maxPrice = $request->input('max_price');
+
+        $products = Products::whereBetween('price', [$minPrice, $maxPrice])->get();
+
+        return view('products', ['products' => $products]);
+    }
+
+
 }
