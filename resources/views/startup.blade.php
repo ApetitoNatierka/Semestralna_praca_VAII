@@ -1,6 +1,7 @@
 @extends('layouts.layout_navig')
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/styles_startup.css') }}">
+    <script src="{{ asset('js/infinite_scroll.js') }}"></script>
     <div id="product-container">
     <div class="album py-5 bg-body-tertiary">
         <div class="container">

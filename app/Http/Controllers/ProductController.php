@@ -92,21 +92,54 @@ class ProductController extends Controller
     }
 
     public function get_products_search(Request $request) {
+        $page = $request->input('page', 1);
+        $perPage = 12;
         $searchTerm = $request->input('search');
 
-        $products = Products::where('description', 'like', '%' . $searchTerm . '%')->orWhere('title', 'like', '%' . $searchTerm . '%')->get();
+        $products = Products::where('description', 'like', '%' . $searchTerm . '%')->orWhere('title', 'like', '%' . $searchTerm . '%')->paginate($perPage, ['*'], 'page', $page);
 
         return view('products', ['products' => $products]);
     }
 
     public function get_products_by_price(Request $request) {
+        $page = $request->input('page', 1);
+        $perPage = 12;
         $minPrice = $request->input('min_price');
         $maxPrice = $request->input('max_price');
 
-        $products = Products::whereBetween('price', [$minPrice, $maxPrice])->get();
+        $products = Products::whereBetween('price', [$minPrice, $maxPrice])->paginate($perPage, ['*'], 'page', $page);
 
         return view('products_ref', ['products' => $products]);
     }
 
+    public function load_more_products(Request $request) {
+        $page = $request->input('page', 1);
+        $perPage = 12;
+
+        $searchTerm = $request->input('search', '');
+        $minPrice = $request->input('min_price', null);
+        $maxPrice = $request->input('max_price', null);
+
+        $productsQuery = Products::query();
+
+        if ($searchTerm) {
+            $productsQuery->where(function ($query) use ($searchTerm) {
+                $query->where('description', 'like', '%' . $searchTerm . '%')
+                    ->orWhere('title', 'like', '%' . $searchTerm . '%');
+            });
+        }
+
+        if ($minPrice !== null && $maxPrice !== null) {
+            $productsQuery->whereBetween('price', [$minPrice, $maxPrice]);
+        }
+
+        $products = $productsQuery->paginate($perPage, ['*'], 'page', $page);
+
+        if ($products->isEmpty()) {
+            return response()->json(['no_more_data' => true]);
+        }
+
+        return view('products_ref', ['products' => $products]);
+    }
 
 }

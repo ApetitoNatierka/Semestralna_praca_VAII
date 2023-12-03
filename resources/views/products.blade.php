@@ -1,6 +1,8 @@
 @extends('layouts.layout_navig')
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/styles_products.css') }}">
+    <script src="{{ asset('js/infinite_scroll.js') }}"></script>
+    <div id="product-container">
     <div class="container py-5">
         @php
             $productCount = count($products);
@@ -35,5 +37,6 @@
                 </div>
             @endif
         @endfor
+    </div>
     </div>
 @endsection
