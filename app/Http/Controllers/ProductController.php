@@ -105,7 +105,7 @@ class ProductController extends Controller
 
         $products = Products::whereBetween('price', [$minPrice, $maxPrice])->get();
 
-        return view('products', ['products' => $products]);
+        return view('products_ref', ['products' => $products]);
     }
 
 

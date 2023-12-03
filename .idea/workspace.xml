@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="uprava pohladu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="novy blade pre filtrovanie cez ajax">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/startup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products_ref.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_ref.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +221,7 @@
       <workItem from="1701365360598" duration="2135000" />
       <workItem from="1701367680903" duration="196000" />
       <workItem from="1701532096539" duration="11652000" />
-      <workItem from="1701587549162" duration="336000" />
+      <workItem from="1701587549162" duration="793000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -570,7 +567,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701540539043</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="funkcnost slideru">
+      <option name="closed" value="true" />
+      <created>1701588224167</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1701588224167</updated>
+    </task>
+    <task id="LOCAL-00045" summary="novy blade pre filtrovanie cez ajax">
+      <option name="closed" value="true" />
+      <created>1701588307276</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1701588307276</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,8 +654,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie UserControlleru" />
-    <MESSAGE value="pridanie register stránky" />
     <MESSAGE value="pridanie getterov na views" />
     <MESSAGE value="pridanie prooducts html" />
     <MESSAGE value="pridanie prekliku z signup na register" />
@@ -666,6 +677,8 @@
     <MESSAGE value="pridanie editacie productu" />
     <MESSAGE value="vyhladavanie cez search" />
     <MESSAGE value="uprava pohladu" />
-    <option name="LAST_COMMIT_MESSAGE" value="uprava pohladu" />
+    <MESSAGE value="funkcnost slideru" />
+    <MESSAGE value="novy blade pre filtrovanie cez ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="novy blade pre filtrovanie cez ajax" />
   </component>
 </project>
