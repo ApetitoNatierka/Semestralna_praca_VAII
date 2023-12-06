@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="oprava pohladu pre slider (funkcne)">
-      <change afterPath="$PROJECT_DIR$/public/js/infinite_scroll.js" afterDir="false" />
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie infinite scroll">
+      <change afterPath="$PROJECT_DIR$/public/js/validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/startup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +222,10 @@
       <workItem from="1701365360598" duration="2135000" />
       <workItem from="1701367680903" duration="196000" />
       <workItem from="1701532096539" duration="11652000" />
-      <workItem from="1701587549162" duration="6835000" />
+      <workItem from="1701587549162" duration="7749000" />
+      <workItem from="1701604692525" duration="11000" />
+      <workItem from="1701788698629" duration="866000" />
+      <workItem from="1701873343407" duration="1307000" />
     </task>
     <task id="LOCAL-00001" summary="pridanie frameworku">
       <option name="closed" value="true" />
@@ -596,7 +595,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701588428357</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="pridanie infinite scroll">
+      <option name="closed" value="true" />
+      <created>1701604535389</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1701604535389</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +674,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie prooducts html" />
     <MESSAGE value="pridanie prekliku z signup na register" />
     <MESSAGE value="produkty" />
     <MESSAGE value="refractor navigator do samostatneho file" />
@@ -692,6 +698,7 @@
     <MESSAGE value="funkcnost slideru" />
     <MESSAGE value="novy blade pre filtrovanie cez ajax" />
     <MESSAGE value="oprava pohladu pre slider (funkcne)" />
-    <option name="LAST_COMMIT_MESSAGE" value="oprava pohladu pre slider (funkcne)" />
+    <MESSAGE value="pridanie infinite scroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie infinite scroll" />
   </component>
 </project>
