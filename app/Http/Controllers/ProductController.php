@@ -22,7 +22,9 @@ class ProductController extends Controller
         return view('product', ['product' => $product]);
     }
 
-    public function get_edit_product(Products $product) {
+    public function get_edit_product($product_id) {
+        $product = Products::find($product_id);
+
         if(auth()->id() !== $product['user_id']) {
             redirect('/');
         }
@@ -31,7 +33,8 @@ class ProductController extends Controller
     }
 
     public function get_new_product() {
-        return view('new_product');
+        $product = null;
+        return view('new_product', compact('product'));
     }
 
     public function new_product(Request $request) {

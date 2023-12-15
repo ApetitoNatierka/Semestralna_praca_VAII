@@ -38,7 +38,7 @@ Route::get('/products_user', [ProductController::class, 'get_users_products']);
 
 Route::get('/new_product', [ProductController::class, 'get_new_product']);
 
-Route::get('/edit_product/{product}', [ProductController::class, 'get_edit_product']);
+Route::get('/edit_product/{product_id}', [ProductController::class, 'get_edit_product']);
 
 Route::delete('/delete_product/{product}', [ProductController::class, 'delete_product']);
 
