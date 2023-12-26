@@ -32,10 +32,10 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="button-container">
         @if(auth()->id() == $product->user_id)
         <a href="/edit_product/{{$product->id}}">
-            <p class="edit">Edit</p>
+            <button class="btn btn--primary">Edit</button>
         </a>
         @endif
 
@@ -43,8 +43,30 @@
                 <form action="/delete_product/{{$product->id}}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <button class="delete">Delete</button>
+                    <!--<button class="delete">Delete</button>-->
+                    <button class="btn btn--secondary">Delete</button>
                 </form>
+        @endif
+    </div>
+    <div class="comments-section">
+        <h3>Komentáre</h3>
+
+            <div class="comment">
+                <h5 class = "name">Jan Franak</h5>
+                <p>tu bude nejaky komentar comment</p>
+            </div>
+
+        @if(auth()->check())
+        <form action="/add_comment" method="POST">
+            @csrf
+            <input type="hidden" name="product_id" value="{{ $product->id }}">
+            <textarea name="comment_text" placeholder="Pridať komentár"></textarea>
+            <button type="submit" class="add-comment-btn">Pridať komentár</button>
+        </form>
+        @else
+            <a href="/sign_in">
+                <p>Pre pridanie komentára sa prosím prihláste.</p>
+            </a>
         @endif
     </div>
 @endsection
