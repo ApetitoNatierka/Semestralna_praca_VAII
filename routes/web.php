@@ -51,3 +51,5 @@ Route::post('/products_search', [ProductController::class , 'get_products_search
 Route::get('/products_by_price', [ProductController::class, 'get_products_by_price']);
 
 Route::get('/load_more_products', [ProductController::class, 'load_more_products']);
+
+Route::post('/add_comment', [ProductController::class, 'add_new_comment']);

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Products;
+use App\Models\Comment;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -35,6 +36,21 @@ class ProductController extends Controller
     public function get_new_product() {
         $product = null;
         return view('new_product', compact('product'));
+    }
+
+    public function add_new_comment(Request $request) {
+        $incoming_fields_ = $request->validate(['comment' => 'required|string',
+                                                'product_id' => 'required']);
+        $product_id = $request->get('product_id');
+
+        $incoming_fields_['comment'] = strip_tags($incoming_fields_['comment']);
+        $incoming_fields_['product_id'] = strip_tags($incoming_fields_['product_id']);
+        $incoming_fields_['user_id'] = auth()->id();
+
+        Comment::create($incoming_fields_);
+        $product = Products::find($product_id);
+        return view('product', ['product' => $product]);
+
     }
 
     public function new_product(Request $request) {
@@ -115,7 +131,8 @@ class ProductController extends Controller
         return view('products_ref', ['products' => $products]);
     }
 
-    public function load_more_products(Request $request) {
+    public function load_more_products(Request $request)
+    {
         $page = $request->input('page', 1);
         $perPage = 12;
 

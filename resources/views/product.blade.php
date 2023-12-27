@@ -43,7 +43,6 @@
                 <form action="/delete_product/{{$product->id}}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <!--<button class="delete">Delete</button>-->
                     <button class="btn btn--secondary">Delete</button>
                 </form>
         @endif
@@ -59,8 +58,8 @@
         @if(auth()->check())
         <form action="/add_comment" method="POST">
             @csrf
-            <input type="hidden" name="product_id" value="{{ $product->id }}">
-            <textarea name="comment_text" placeholder="Pridať komentár"></textarea>
+                <input type="hidden" name="product_id" value="{{ $product->id }}">
+                <textarea name="comment" placeholder="Pridať komentár"></textarea>
             <button type="submit" class="add-comment-btn">Pridať komentár</button>
         </form>
         @else
