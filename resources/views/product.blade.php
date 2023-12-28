@@ -47,6 +47,17 @@
                 </form>
         @endif
     </div>
+    <div class="offer_section">
+        @if(auth()->check())
+            <a href="/send_offer/{{$product->id}}">
+                <button class="btn btn--secondary">Send offer</button>
+            </a>
+        @else
+            <a href="/sign_in">
+                <button class="btn btn--secondary">Send offer</button>
+            </a>
+        @endif
+    </div>
     <div class="comments-section">
         <h3>Comment section</h3>
 
