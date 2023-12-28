@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="riesenie komentov" />
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie migracie pre offers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,15 +224,7 @@
       <workItem from="1701873343407" duration="3997000" />
       <workItem from="1701951648346" duration="831000" />
       <workItem from="1702659950228" duration="3362000" />
-      <workItem from="1703576576921" duration="19337000" />
-    </task>
-    <task id="LOCAL-00006" summary="pretvorenie na blade.php">
-      <option name="closed" value="true" />
-      <created>1700902924318</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1700902924319</updated>
+      <workItem from="1703576576921" duration="19644000" />
     </task>
     <task id="LOCAL-00007" summary="pridanie textu Register do signin">
       <option name="closed" value="true" />
@@ -618,7 +610,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703759213319</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="pridanie migracie pre offers">
+      <option name="closed" value="true" />
+      <created>1703759835124</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1703759835124</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,7 +689,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie ProductControlleru a metody index" />
     <MESSAGE value="utriedenie do Controllerov" />
     <MESSAGE value="migracia pre produkty" />
     <MESSAGE value="jemne upravy" />
@@ -714,6 +713,7 @@
     <MESSAGE value="pridanie migracii pre osobne udaje a komenty" />
     <MESSAGE value="pridanie pridavania komentarov" />
     <MESSAGE value="riesenie komentov" />
-    <option name="LAST_COMMIT_MESSAGE" value="riesenie komentov" />
+    <MESSAGE value="pridanie migracie pre offers" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie migracie pre offers" />
   </component>
 </project>
