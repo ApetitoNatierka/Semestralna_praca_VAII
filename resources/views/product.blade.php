@@ -48,10 +48,12 @@
         @endif
     </div>
     <div class="offer_section">
-        @if(auth()->check())
+        @if(auth()->check() && auth()->id() != $product->user_id)
             <a href="/send_offer/{{$product->id}}">
                 <button class="btn btn--secondary">Send offer</button>
             </a>
+        @elseif(auth()->id() == $product->user_id)
+            <p>Cannot send offer to your own product</p>
         @else
             <a href="/sign_in">
                 <button class="btn btn--secondary">Send offer</button>

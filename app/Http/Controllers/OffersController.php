@@ -31,7 +31,12 @@ class OffersController extends Controller
 
     public function get_sent_offers() {
 
-        $offers = Offers::where('user_id', auth()->id());
+        $offers = Offers::where('user_id', auth()->id())->get();
+        return view('offers', ['offers' => $offers]);
+    }
+
+    public function get_received_offers() {
+        $offers = Offers::where('to_user',auth()->id())->get();
         return view('offers', ['offers' => $offers]);
     }
 

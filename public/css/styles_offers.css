@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.offer {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.btn {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.suggested-price {
+    font-weight: bold;
+}
+

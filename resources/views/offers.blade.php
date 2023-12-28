@@ -7,15 +7,18 @@
             <div class="offer">
                 <p class="description">{{ $offer->description }}</p>
                 <p class="suggested-price">Suggested Price: ${{ $offer->suggested_price }}</p>
-                <form action="/accept_offer/{{ $offer->id }}" method="POST">
-                    @csrf
-                    <button type="submit" class="btn btn--accept">Accept</button>
-                </form>
-                <form action="/reject_offer/{{ $offer->id }}" method="POST">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn--reject">Reject</button>
-                </form>
+                @if(auth()->id() == $offer->to_user)
+                    <form action="/delete_product/{{ $offer->product->id }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn--accept">Accept</button>
+                    </form>
+                    <form action="/reject_offer/{{ $offer->id }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn--reject">Reject</button>
+                    </form>
+                @endif
             </div>
         @empty
             <p>No offers available.</p>
