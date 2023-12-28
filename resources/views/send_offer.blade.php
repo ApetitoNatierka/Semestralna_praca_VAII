@@ -2,6 +2,7 @@
 @section('content')
 
     <link rel="stylesheet" href="{{ asset('css/styles_send_offer.css') }}">
+
     <div class="container">
         <div class="card p-3 shadow">
             <h2 class="mb-4">Send Offer</h2>
