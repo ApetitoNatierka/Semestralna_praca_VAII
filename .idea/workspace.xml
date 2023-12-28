@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie moznosti vytvorenia poziadavky">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie do dropdown rec/sent offers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,15 +225,7 @@
       <workItem from="1701951648346" duration="831000" />
       <workItem from="1702659950228" duration="3362000" />
       <workItem from="1703576576921" duration="24569000" />
-      <workItem from="1703771502340" duration="3979000" />
-    </task>
-    <task id="LOCAL-00011" summary="pridanie getterov na views">
-      <option name="closed" value="true" />
-      <created>1700920636628</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1700920636628</updated>
+      <workItem from="1703771502340" duration="4342000" />
     </task>
     <task id="LOCAL-00012" summary="pridanie prooducts html">
       <option name="closed" value="true" />
@@ -621,7 +611,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703774722803</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="pridanie do dropdown rec/sent offers">
+      <option name="closed" value="true" />
+      <created>1703775828589</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1703775828589</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +690,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie funkcie formuláru" />
     <MESSAGE value="upravenie navigatora" />
     <MESSAGE value="upravenie labelu" />
     <MESSAGE value="autorizacia" />
@@ -717,6 +714,7 @@
     <MESSAGE value="pridanie Controlleru offer" />
     <MESSAGE value="pridanie migracie pre dalsi stlpec do offers" />
     <MESSAGE value="pridanie moznosti vytvorenia poziadavky" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie moznosti vytvorenia poziadavky" />
+    <MESSAGE value="pridanie do dropdown rec/sent offers" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie do dropdown rec/sent offers" />
   </component>
 </project>
