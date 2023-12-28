@@ -1,0 +1,12 @@
+.card-custom {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card-custom .card-body-custom {
+    font-size: 1.2rem;
+}
+

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OffersController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -57,3 +58,6 @@ Route::post('/products_search', [ProductController::class , 'get_products_search
 Route::post('/add_comment', [ProductController::class, 'add_new_comment']);
 
 
+Route::get('/send_offer/{product}', [OffersController::class, 'get_send_offer']);
+
+Route::post('/send_offer/{product}', [OffersController::class, 'send_offer']);
