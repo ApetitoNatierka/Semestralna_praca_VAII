@@ -30,7 +30,7 @@ Route::post('/register', [UserController::class, 'register']);
 Route::post('/logout', [UserController::class, 'logout']);
 
 
-Route::get('/product/{product}', [ProductController::class, 'get_product']);
+Route::get('/product/{product_id}', [ProductController::class, 'get_product']);
 
 Route::get('/products_all', [ProductController::class, 'get_products_all']);
 
@@ -40,16 +40,18 @@ Route::get('/new_product', [ProductController::class, 'get_new_product']);
 
 Route::get('/edit_product/{product_id}', [ProductController::class, 'get_edit_product']);
 
+Route::get('/products_by_price', [ProductController::class, 'get_products_by_price']);
+
+Route::get('/load_more_products', [ProductController::class, 'load_more_products']);
+
 Route::delete('/delete_product/{product}', [ProductController::class, 'delete_product']);
+
+Route::delete('/delete_comment/{comment}', [ProductController::class, 'delete_comment']);
 
 Route::put('/edit_product/{product}', [ProductController::class, 'edit_product']);
 
 Route::post('/new_product', [ProductController::class, 'new_product']);
 
 Route::post('/products_search', [ProductController::class , 'get_products_search']);
-
-Route::get('/products_by_price', [ProductController::class, 'get_products_by_price']);
-
-Route::get('/load_more_products', [ProductController::class, 'load_more_products']);
 
 Route::post('/add_comment', [ProductController::class, 'add_new_comment']);

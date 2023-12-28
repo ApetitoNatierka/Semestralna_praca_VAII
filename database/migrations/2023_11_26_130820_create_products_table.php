@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('kraj');
             $table->string('category');
             $table->foreignId('user_id')->constrained();
-            $table->foreignId('product_id')->constrained();
         });
     }
 

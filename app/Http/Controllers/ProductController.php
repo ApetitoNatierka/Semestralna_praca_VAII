@@ -19,8 +19,11 @@ class ProductController extends Controller
         return view('products', ['products' => $products]);
     }
 
-    public function get_product(Products $product) {
-        return view('product', ['product' => $product]);
+    public function get_product($product_id) {
+        $product = Products::find($product_id);
+        $comments = Comment::where('product_id', $product->id)->latest()->get();
+
+        return view('product', ['product' => $product, 'comments' => $comments]);
     }
 
     public function get_edit_product($product_id) {
@@ -49,8 +52,9 @@ class ProductController extends Controller
 
         Comment::create($incoming_fields_);
         $product = Products::find($product_id);
-        return view('product', ['product' => $product]);
+        $comments = Comment::where('product_id', $product->id)->latest()->get();
 
+        return view('product', ['product' => $product, 'comments' => $comments]);
     }
 
     public function new_product(Request $request) {
@@ -84,7 +88,7 @@ class ProductController extends Controller
         $incoming_fields_ = $request->validate([
             'title' => ['required', 'min:3', 'max:30'],
             'price' => ['required', 'integer'],
-            'description' => ['required', 'min:1', 'max:1000'],
+            'description' => ['required', 'min:1', 'max:4000'],
             'kraj' => ['required'],
             'category' => ['required'],
         ]);
@@ -108,6 +112,18 @@ class ProductController extends Controller
         }
 
         return redirect('/');
+    }
+
+    public function delete_comment(Comment $comment) {
+
+        $product = Products::find($comment->product_id);
+        $comments = Comment::where('product_id', $product->id)->latest()->get();
+
+        if(auth()->id() === $comment->user_id) {
+            $comment->delete();
+        }
+
+        return view('product', ['product' => $product, 'comments' => $comments]);
     }
 
     public function get_products_search(Request $request) {

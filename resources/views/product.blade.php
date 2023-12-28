@@ -48,12 +48,26 @@
         @endif
     </div>
     <div class="comments-section">
-        <h3>Komentáre</h3>
+        <h3>Comment section</h3>
 
+        @foreach($comments as $comment)
             <div class="comment">
-                <h5 class = "name">Jan Franak</h5>
-                <p>tu bude nejaky komentar comment</p>
+                @php
+                    $user = \App\Models\User::find($comment->user_id);
+                @endphp
+                <h5 class="name">{{ $user->name }}</h5>
+                <p>{{ $comment->comment}}</p>
+                @if(auth()->id() == $comment->user_id)
+                    <div class="comment-action">
+                    <form action="/delete_comment/{{$comment->id}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn--secondary">Delete</button>
+                    </form>
+                    </div>
+                @endif
             </div>
+        @endforeach
 
         @if(auth()->check())
         <form action="/add_comment" method="POST">
