@@ -61,3 +61,7 @@ Route::post('/add_comment', [ProductController::class, 'add_new_comment']);
 Route::get('/send_offer/{product}', [OffersController::class, 'get_send_offer']);
 
 Route::post('/send_offer/{product}', [OffersController::class, 'send_offer']);
+
+Route::get('/sent_offers', [OffersController::class, 'get_sent_offers']);
+
+Route::get('/received_offers', [OffersController::class, 'get_received_offers']);
