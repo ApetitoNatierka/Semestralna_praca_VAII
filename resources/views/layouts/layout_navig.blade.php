@@ -80,6 +80,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/sent_offers">Sent Offers</a>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Town</a>
                     <ul class="dropdown-menu">
