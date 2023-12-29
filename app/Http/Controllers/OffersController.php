@@ -32,6 +32,8 @@ class OffersController extends Controller
         $incoming_fields2_['received'] = true;
         $incoming_fields2_['offer_id'] = $offer->id;
 
+        info($offer->id);
+
         OfferNotification::create($incoming_fields2_);
 
         $comments = Comment::where('product_id', $product->id)->latest()->get();
@@ -47,6 +49,10 @@ class OffersController extends Controller
 
     public function get_received_offers() {
         $offers = Offers::where('to_user',auth()->id())->get();
+        OfferNotification::where('to_user', auth()->id())
+            ->where('received', true)
+            ->update(['seen' => true]);
+
         return view('offers', ['offers' => $offers]);
     }
 

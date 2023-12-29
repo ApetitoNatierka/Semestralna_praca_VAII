@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OfferNotificationsController;
 use App\Http\Controllers\OffersController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
@@ -67,3 +68,6 @@ Route::get('/sent_offers', [OffersController::class, 'get_sent_offers']);
 Route::get('/received_offers', [OffersController::class, 'get_received_offers']);
 
 Route::delete('/reject_offer/{offer}', [OffersController::class, 'delete_offer']);
+
+
+Route::get('/check_notifications', [OfferNotificationsController::class, 'check_notifications']);

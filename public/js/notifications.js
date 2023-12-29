@@ -18,3 +18,23 @@ document.getElementById('notification-overlay').addEventListener('click', functi
         hideNotificationOverlay();
     }
 });
+
+function checkForNotifications() {
+    $.ajax({
+        url: '/check_notifications',
+        method: 'GET',
+        success: function(response) {
+            $('.notification-dialog').html(response);
+        },
+        error: function(error) {
+            console.error('Chyba pri kontrole notifikácií:', error);
+        }
+    });
+}
+
+$(window).on('popstate', function() {
+    checkForNotifications();
+});
+
+//prevzate z internetu
+setInterval(checkForNotifications, 100);

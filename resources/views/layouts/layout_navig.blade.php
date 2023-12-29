@@ -31,8 +31,6 @@
         <!--prevzate z internetu-->
         <div id="notification-overlay" class="notification-overlay">
             <div class="notification-dialog">
-                <p>Nová notifikácia</p>
-                <p>Ďalšia notifikácia</p>
             </div>
         </div>
         @auth
