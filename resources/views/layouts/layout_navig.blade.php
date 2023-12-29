@@ -74,7 +74,7 @@
                         Max cena: <span id="max-price"></span>
                     </p>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Town</a>
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">ZÁPAD</h6></li>
