@@ -12,7 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('offer_notification', function (Blueprint $table) {
-            $table->foreignId('offer_id')->constrained('offers');
+            if (!Schema::hasColumn('offer_notification', 'offer_id')) {
+                $table->foreignId('offer_id')->constrained('offers')->onDelete('cascade');
+            }
         });
     }
 

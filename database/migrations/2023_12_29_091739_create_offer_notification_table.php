@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('from_user')->constrained('users');
             $table->foreignId('to_user')->constrained('users');
-            $table->foreignId('product_id')->constrained();
+            $table->foreignId('product_id')->constrained()->onDelete('cascade');
             $table->boolean('received');
             $table->timestamps();
         });
