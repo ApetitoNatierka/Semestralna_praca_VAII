@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\OfferNotification;
 use App\Models\Products;
 use Illuminate\Http\Request;
 use App\Models\Offers;
@@ -25,7 +26,12 @@ class OffersController extends Controller
         $incoming_fields_['product_id'] = $product->id;
         Offers::create($incoming_fields_);
 
+        $incoming_fields2_['from_user'] = auth()->id();
+        $incoming_fields2_['to_user'] = $product->user_id;
+        $incoming_fields2_['product_id'] = $product->id;
+        $incoming_fields2_['received'] = true;
 
+        OfferNotification::create($incoming_fields2_);
 
         $comments = Comment::where('product_id', $product->id)->latest()->get();
 
