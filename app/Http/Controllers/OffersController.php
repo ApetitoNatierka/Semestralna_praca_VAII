@@ -60,7 +60,7 @@ class OffersController extends Controller
         if (auth()->id() == $offer->user_id || auth()->id() == $offer->to_user) {
             $offer->delete($offer);
         }
-        redirect('/');
+        redirect('/received_offers');
     }
 
 }

@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie funkcionality notifikacii">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_29_091739_create_offer_notification_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_29_091739_create_offer_notification_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_29_113450_add_offer_id_to_offer_notification_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_29_113450_add_offer_id_to_offer_notification_table.php" afterDir="false" />
-    </list>
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie funkcionality notifikacii" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,14 +227,6 @@
       <workItem from="1703576576921" duration="24569000" />
       <workItem from="1703771502340" duration="4342000" />
       <workItem from="1703843393502" duration="10176000" />
-    </task>
-    <task id="LOCAL-00020" summary="migracia pre produkty">
-      <option name="closed" value="true" />
-      <created>1701004130206</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1701004130206</updated>
     </task>
     <task id="LOCAL-00021" summary="jemne upravy">
       <option name="closed" value="true" />
@@ -624,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703856473283</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="pridanie funkcionality notifikacii">
+      <option name="closed" value="true" />
+      <created>1703858639606</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1703858639606</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
