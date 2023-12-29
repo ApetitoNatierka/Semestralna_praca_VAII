@@ -74,7 +74,7 @@
                         Max cena: <span id="max-price"></span>
                     </p>
                 </li>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/received_offers">Received Offers</a>
                 </li>
