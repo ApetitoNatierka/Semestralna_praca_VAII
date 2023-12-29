@@ -74,6 +74,13 @@
                         Max cena: <span id="max-price"></span>
                     </p>
                 </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/received_offers">Received Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sent_offers">Sent Offers</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Town</a>
                     <ul class="dropdown-menu">
