@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="model offer notification">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="vytvaranie notiifikacii">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,15 +228,7 @@
       <workItem from="1702659950228" duration="3362000" />
       <workItem from="1703576576921" duration="24569000" />
       <workItem from="1703771502340" duration="4342000" />
-      <workItem from="1703843393502" duration="675000" />
-    </task>
-    <task id="LOCAL-00016" summary="pridanie rôzneho množstva produktov">
-      <option name="closed" value="true" />
-      <created>1700996668513</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1700996668513</updated>
+      <workItem from="1703843393502" duration="3748000" />
     </task>
     <task id="LOCAL-00017" summary="pridanie ProductControlleru">
       <option name="closed" value="true" />
@@ -623,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703842698266</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="vytvaranie notiifikacii">
+      <option name="closed" value="true" />
+      <created>1703844395901</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1703844395902</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +693,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="autorizacia" />
     <MESSAGE value="nove metody do UserController" />
     <MESSAGE value="novy model Products" />
     <MESSAGE value="pridanie validacie integra" />
@@ -719,6 +717,7 @@
     <MESSAGE value="pridanie do dropdown rec/sent offers" />
     <MESSAGE value="funkcionalita notofication" />
     <MESSAGE value="model offer notification" />
-    <option name="LAST_COMMIT_MESSAGE" value="model offer notification" />
+    <MESSAGE value="vytvaranie notiifikacii" />
+    <option name="LAST_COMMIT_MESSAGE" value="vytvaranie notiifikacii" />
   </component>
 </project>
