@@ -13,9 +13,10 @@ class OffersController extends Controller
         return view('send_offer', ['product' => $product]);
     }
 
-    public function send_offer(Request $request, Products $product) {
+    public function send_offer(Request $request, Products $product)
+    {
         $incoming_fields_ = $request->validate(['description' => 'required|string',
-                                                'suggested_price' => 'required']);
+            'suggested_price' => 'required']);
 
         $incoming_fields_['description'] = strip_tags($incoming_fields_['description']);
         $incoming_fields_['suggested_price'] = strip_tags($incoming_fields_['suggested_price']);
@@ -23,6 +24,8 @@ class OffersController extends Controller
         $incoming_fields_['to_user'] = $product->user_id;
         $incoming_fields_['product_id'] = $product->id;
         Offers::create($incoming_fields_);
+
+
 
         $comments = Comment::where('product_id', $product->id)->latest()->get();
 
@@ -38,6 +41,13 @@ class OffersController extends Controller
     public function get_received_offers() {
         $offers = Offers::where('to_user',auth()->id())->get();
         return view('offers', ['offers' => $offers]);
+    }
+
+    public function delete_offer(Offers $offer) {
+        if (auth()->id() == $offer->user_id || auth()->id() == $offer->to_user) {
+            $offer->delete($offer);
+        }
+        redirect('/');
     }
 
 }

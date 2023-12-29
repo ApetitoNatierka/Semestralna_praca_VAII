@@ -65,3 +65,5 @@ Route::post('/send_offer/{product}', [OffersController::class, 'send_offer']);
 Route::get('/sent_offers', [OffersController::class, 'get_sent_offers']);
 
 Route::get('/received_offers', [OffersController::class, 'get_received_offers']);
+
+Route::delete('/reject_offer/{offer}', [OffersController::class, 'delete_offer']);
