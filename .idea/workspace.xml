@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie do dropdown rec/sent offers">
+      <change afterPath="$PROJECT_DIR$/public/js/notifications.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles_navig.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles_navig.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" afterDir="false" />
@@ -21,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
