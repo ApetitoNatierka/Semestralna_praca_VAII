@@ -24,12 +24,13 @@ class OffersController extends Controller
         $incoming_fields_['user_id'] = auth()->id();
         $incoming_fields_['to_user'] = $product->user_id;
         $incoming_fields_['product_id'] = $product->id;
-        Offers::create($incoming_fields_);
+        $offer = Offers::create($incoming_fields_);
 
         $incoming_fields2_['from_user'] = auth()->id();
         $incoming_fields2_['to_user'] = $product->user_id;
         $incoming_fields2_['product_id'] = $product->id;
         $incoming_fields2_['received'] = true;
+        $incoming_fields2_['offer_id'] = $offer->id;
 
         OfferNotification::create($incoming_fields2_);
 
