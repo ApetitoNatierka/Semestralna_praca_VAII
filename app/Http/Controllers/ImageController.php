@@ -11,6 +11,7 @@ class ImageController extends Controller
 {
     public function delete_image(Image $image) {
         $product = Products::find($image->product_id);
+        Storage::delete($image->path);
         $image->delete($image);
         return view('new_product', ['product' => $product]);
     }
@@ -24,6 +25,8 @@ class ImageController extends Controller
             $newImage = $request->file('newImage');
 
             $newImagePath =  Storage::put('images', $newImage);
+
+            Storage::delete($image->path);
 
             $image->update(['path' => $newImagePath]);
 
