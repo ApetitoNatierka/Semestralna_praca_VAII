@@ -46,7 +46,7 @@
     @elseif(!empty($product))
         @if(auth()->id() == $product->user_id )
             <div class="container-fluid p-4 mt-5">
-                <form class="row g-3" action="/edit_product/{{$product->id}}" method="POST">
+                <form class="row g-3" action="/edit_product/{{$product->id}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="col-md-6">
@@ -126,12 +126,12 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="/edit_image/{{$image->id}}" method="POST">
+                                        <form action="/edit_image/{{$image->id}}" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             @method('PUT')
                                             <div class="form-group">
                                                 <label for="newImage">Choose New Image</label>
-                                                <input type="file" class="form-control" id="newImage" name="newImage" accept="image/*">
+                                                <input type="file" class="form-control" id="newImage" name="newImage" accept="image/*" multiple="false">
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

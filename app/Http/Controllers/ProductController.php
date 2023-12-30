@@ -6,6 +6,7 @@ use App\Models\Image;
 use App\Models\Products;
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
@@ -110,14 +111,14 @@ class ProductController extends Controller
         $incoming_fields_['category'] = strip_tags($incoming_fields_['category']);
         $incoming_fields_['user_id'] = auth()->id();
 
+        $product->update($incoming_fields_);
+
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
                 $path = Storage::put('images', $image);
                 Image::create(['path' => $path, 'product_id' => $product->id]);
             }
         }
-
-        $product->update($incoming_fields_);
 
         return redirect('/');
     }
