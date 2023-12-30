@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\OfferNotificationsController;
 use App\Http\Controllers\OffersController;
 use App\Http\Controllers\ProductController;
@@ -73,6 +74,10 @@ Route::delete('/reject_offer/{offer}', [OffersController::class, 'delete_offer']
 
 Route::get('/check_notifications', [OfferNotificationsController::class, 'check_notifications']);
 
+
+Route::delete('/delete_image/{image}', [ImageController::class, 'delete_image']);
+
+Route::put('/edit_image/{$image}', [ImageController::class, 'edit_image']);
 
 Route::get('/storage/images/{filename}', function ($filename) {
     $path = 'images/' . $filename;

@@ -2,7 +2,6 @@
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/style_new_product.css') }}">
 
-
     @if (is_null($product))
         <div class="container-fluid p-4 mt-5">
     <form class="row g-3" action="/new_product" method="POST" enctype="multipart/form-data">
@@ -117,21 +116,26 @@
                             </td>
                         </tr>
                         <!--prevzate z internetu-->
-                        <div class="modal fade" id="editImageModal{{$image->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="editImageModal{{$image->id}}" tabindex="-1" role="dialog" aria-labelledby="editImageModalLabel{{$image->id}}" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Edit Image</h5>
+                                        <h5 class="modal-title" id="editImageModalLabel{{$image->id}}">Edit Image</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="/edit_image/{{$image->id}}" method="POST">
-                                            @csrf
-                                            @method('PUT')
-                                            <button type="submit" class="btn btn-primary">Save Changes</button>
-                                        </form>
+                                        <!-- Tlačidlo na nahrávanie súboru -->
+                                        <input type="file" id="imageUpload{{$image->id}}" name="image" accept="image/*">
+
+                                        <!-- Prípadné ďalšie polia alebo prvky formulára môžete pridať sem -->
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <!-- Tlačidlo na potvrdenie úpravy obrázka -->
+                                        <button type="button" class="btn btn-primary" onclick="handleImageUpload({{$image->id}})">Save Changes</button>
                                     </div>
                                 </div>
                             </div>

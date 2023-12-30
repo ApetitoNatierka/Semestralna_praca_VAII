@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie modelu image">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="uprava editacie a pridavanie images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style_new_product.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style_new_product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/new_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/new_product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -235,15 +232,7 @@
       <workItem from="1703576576921" duration="24569000" />
       <workItem from="1703771502340" duration="4342000" />
       <workItem from="1703843393502" duration="10176000" />
-      <workItem from="1703921118007" duration="10973000" />
-    </task>
-    <task id="LOCAL-00026" summary="upravenie labelu">
-      <option name="closed" value="true" />
-      <created>1701014509197</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1701014509197</updated>
+      <workItem from="1703921118007" duration="13214000" />
     </task>
     <task id="LOCAL-00027" summary="autorizacia">
       <option name="closed" value="true" />
@@ -629,7 +618,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703925706635</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="uprava editacie a pridavanie images">
+      <option name="closed" value="true" />
+      <created>1703933882912</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1703933882912</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,7 +697,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="uprava pohladu" />
     <MESSAGE value="funkcnost slideru" />
     <MESSAGE value="novy blade pre filtrovanie cez ajax" />
     <MESSAGE value="oprava pohladu pre slider (funkcne)" />
@@ -725,6 +721,7 @@
     <MESSAGE value="uprava reject offers" />
     <MESSAGE value="pridanie migracie images" />
     <MESSAGE value="pridanie modelu image" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie modelu image" />
+    <MESSAGE value="uprava editacie a pridavanie images" />
+    <option name="LAST_COMMIT_MESSAGE" value="uprava editacie a pridavanie images" />
   </component>
 </project>
