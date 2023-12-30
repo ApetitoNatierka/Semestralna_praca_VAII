@@ -89,3 +89,7 @@ form[role="search"] {
     padding: 20px;
     border-radius: 10px;
 }
+
+#notification-button.has-new-notifications {
+    border-color: yellow;
+}

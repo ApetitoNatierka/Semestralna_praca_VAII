@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie funkcionality notifikacii">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="uprava reject offers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles_navig.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles_navig.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/notifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/notifications.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/notifications.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,15 +232,7 @@
       <workItem from="1703576576921" duration="24569000" />
       <workItem from="1703771502340" duration="4342000" />
       <workItem from="1703843393502" duration="10176000" />
-      <workItem from="1703921118007" duration="1038000" />
-    </task>
-    <task id="LOCAL-00022" summary="jemne upravy">
-      <option name="closed" value="true" />
-      <created>1701011385211</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1701011385211</updated>
+      <workItem from="1703921118007" duration="3136000" />
     </task>
     <task id="LOCAL-00023" summary="formulár pre nové produkty">
       <option name="closed" value="true" />
@@ -623,7 +618,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703858669081</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="uprava reject offers">
+      <option name="closed" value="true" />
+      <created>1703923324422</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1703923324423</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +697,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="neviem co som robil ale nieco z upravou produktov" />
     <MESSAGE value="pridanie editacie productu" />
     <MESSAGE value="vyhladavanie cez search" />
     <MESSAGE value="uprava pohladu" />
@@ -719,6 +721,7 @@
     <MESSAGE value="pridanie controllera pre notifikacie" />
     <MESSAGE value="pridanie stlpcov do offer notification" />
     <MESSAGE value="pridanie funkcionality notifikacii" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridanie funkcionality notifikacii" />
+    <MESSAGE value="uprava reject offers" />
+    <option name="LAST_COMMIT_MESSAGE" value="uprava reject offers" />
   </component>
 </project>

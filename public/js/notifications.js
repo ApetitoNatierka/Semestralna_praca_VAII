@@ -25,11 +25,20 @@ function checkForNotifications() {
         method: 'GET',
         success: function(response) {
             $('.notification-dialog').html(response);
+            update_notification_button_color(response);
         },
         error: function(error) {
             console.error('Chyba pri kontrole notifikácií:', error);
         }
     });
+}
+
+function update_notification_button_color(notificationsHtml) {
+    var hasNewNotifications = $('.new_notification').length > 0;
+
+    var $notificationButton = $('#notification-button');
+
+    $notificationButton.toggleClass('has-new-notifications', hasNewNotifications);
 }
 
 $(window).on('popstate', function() {
