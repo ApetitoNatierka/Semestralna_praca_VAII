@@ -1,1 +1,16 @@
 
+.product_image {
+    max-width: 300px;
+    height: auto;
+}
+
+
+.btn-edit {
+    background-color: #808080;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #808080;
+    color: white;
+}

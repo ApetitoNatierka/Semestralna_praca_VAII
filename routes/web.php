@@ -5,6 +5,7 @@ use App\Http\Controllers\OffersController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +72,12 @@ Route::delete('/reject_offer/{offer}', [OffersController::class, 'delete_offer']
 
 
 Route::get('/check_notifications', [OfferNotificationsController::class, 'check_notifications']);
+
+
+Route::get('/storage/images/{filename}', function ($filename) {
+    $path = 'images/' . $filename;
+    $file = Storage::get($path);
+    $type = Storage::mimeType($path);
+
+    return response($file, 200)->header('Content-Type', $type);
+})->where('filename', '.*');
