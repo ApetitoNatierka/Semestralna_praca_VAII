@@ -126,16 +126,18 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <!-- Tlačidlo na nahrávanie súboru -->
-                                        <input type="file" id="imageUpload{{$image->id}}" name="image" accept="image/*">
-
-                                        <!-- Prípadné ďalšie polia alebo prvky formulára môžete pridať sem -->
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <!-- Tlačidlo na potvrdenie úpravy obrázka -->
-                                        <button type="button" class="btn btn-primary" onclick="handleImageUpload({{$image->id}})">Save Changes</button>
+                                        <form action="/edit_image/{{$image->id}}" method="POST">
+                                            @csrf
+                                            @method('PUT')
+                                            <div class="form-group">
+                                                <label for="newImage">Choose New Image</label>
+                                                <input type="file" class="form-control" id="newImage" name="newImage" accept="image/*">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

@@ -77,7 +77,7 @@ Route::get('/check_notifications', [OfferNotificationsController::class, 'check_
 
 Route::delete('/delete_image/{image}', [ImageController::class, 'delete_image']);
 
-Route::put('/edit_image/{$image}', [ImageController::class, 'edit_image']);
+Route::put('/edit_image/{image}', [ImageController::class, 'edit_image']);
 
 Route::get('/storage/images/{filename}', function ($filename) {
     $path = 'images/' . $filename;

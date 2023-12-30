@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="uprava editacie a pridavanie images">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie dialogoveho okna na edit images a delete images funguje">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/new_product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/new_product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -232,15 +233,7 @@
       <workItem from="1703576576921" duration="24569000" />
       <workItem from="1703771502340" duration="4342000" />
       <workItem from="1703843393502" duration="10176000" />
-      <workItem from="1703921118007" duration="13214000" />
-    </task>
-    <task id="LOCAL-00027" summary="autorizacia">
-      <option name="closed" value="true" />
-      <created>1701107459163</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1701107459163</updated>
+      <workItem from="1703921118007" duration="15389000" />
     </task>
     <task id="LOCAL-00028" summary="nove metody do UserController">
       <option name="closed" value="true" />
@@ -626,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703933882912</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="pridanie dialogoveho okna na edit images a delete images funguje">
+      <option name="closed" value="true" />
+      <created>1703936311827</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1703936311827</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,7 +698,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="funkcnost slideru" />
     <MESSAGE value="novy blade pre filtrovanie cez ajax" />
     <MESSAGE value="oprava pohladu pre slider (funkcne)" />
     <MESSAGE value="pridanie infinite scroll" />
@@ -722,6 +722,7 @@
     <MESSAGE value="pridanie migracie images" />
     <MESSAGE value="pridanie modelu image" />
     <MESSAGE value="uprava editacie a pridavanie images" />
-    <option name="LAST_COMMIT_MESSAGE" value="uprava editacie a pridavanie images" />
+    <MESSAGE value="pridanie dialogoveho okna na edit images a delete images funguje" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie dialogoveho okna na edit images a delete images funguje" />
   </component>
 </project>

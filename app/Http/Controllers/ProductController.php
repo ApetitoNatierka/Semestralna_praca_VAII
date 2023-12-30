@@ -80,7 +80,7 @@ class ProductController extends Controller
 
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $path = $path = Storage::put('images', $image);
+                $path = Storage::put('images', $image);
                 Image::create(['path' => $path, 'product_id' => $product->id]);
             }
         }
@@ -109,6 +109,13 @@ class ProductController extends Controller
         $incoming_fields_['kraj'] = strip_tags($incoming_fields_['kraj']);
         $incoming_fields_['category'] = strip_tags($incoming_fields_['category']);
         $incoming_fields_['user_id'] = auth()->id();
+
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $image) {
+                $path = Storage::put('images', $image);
+                Image::create(['path' => $path, 'product_id' => $product->id]);
+            }
+        }
 
         $product->update($incoming_fields_);
 
