@@ -14,20 +14,26 @@
 
     <div class="container py-5">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6  text-center-content">
                 <p class="cena">Cena: {{$product->price}} $</p>
                 <p class="kraj">Kraj: {{$product->kraj}} </p>
                 <p class="category">Category: {{$product->category}} </p>
             </div>
             <div class="col-md-6">
-                <div class="gallery">
-                    <div class="slider">
-                        <div class="slide"><img src="{{ asset('images/moto.png') }}" alt="Image 1"/></div>
-                        <div class="slide"><img src="{{ asset('images/animal.png') }}" alt="Image 2"></div>
-                        <div class="slide"><img src="{{ asset('images/sport.png') }}" alt="Image 3"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Každý obrázok má vlastný slider -->
+                        <div class="swiper-slide">
+                            <img src="{{ asset('images/animal.png') }}" alt="Obrázok 1"  class="img-fluid mx-auto d-block" >
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('images/moto.png') }}" alt="Obrázok 2"  class="img-fluid mx-auto d-block">
+                        </div>
+                        <!-- Ďalšie obrázky... -->
                     </div>
-                    <button id="prev">Previous</button>
-                    <button id="next">Next</button>
+                    <!-- Navigačné tlačidlá pre prechádzanie obrázkov -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="oprava funkcionality edit a delete obrazkov" />
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="odstranovanie img zo storage">
+      <change afterPath="$PROJECT_DIR$/public/js/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles_product.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles_product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_navig.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,15 +233,7 @@
       <workItem from="1703576576921" duration="24569000" />
       <workItem from="1703771502340" duration="4342000" />
       <workItem from="1703843393502" duration="10176000" />
-      <workItem from="1703921118007" duration="18866000" />
-    </task>
-    <task id="LOCAL-00030" summary="pridanie validacie integra">
-      <option name="closed" value="true" />
-      <created>1701195327983</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1701195327983</updated>
+      <workItem from="1703921118007" duration="23943000" />
     </task>
     <task id="LOCAL-00031" summary="neviem co som robil ale nieco z upravou produktov">
       <option name="closed" value="true" />
@@ -621,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703941448016</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="odstranovanie img zo storage">
+      <option name="closed" value="true" />
+      <created>1703942031353</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1703942031353</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +698,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie infinite scroll" />
     <MESSAGE value="validacia na strane klienta pri registracii" />
     <MESSAGE value="upravenie editacie" />
     <MESSAGE value="pridanie migracii pre osobne udaje a komenty" />
@@ -717,6 +722,7 @@
     <MESSAGE value="pridanie dialogoveho okna na edit images a delete images funguje" />
     <MESSAGE value="funkcionalita edit a delete obrazkov" />
     <MESSAGE value="oprava funkcionality edit a delete obrazkov" />
-    <option name="LAST_COMMIT_MESSAGE" value="oprava funkcionality edit a delete obrazkov" />
+    <MESSAGE value="odstranovanie img zo storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="odstranovanie img zo storage" />
   </component>
 </project>

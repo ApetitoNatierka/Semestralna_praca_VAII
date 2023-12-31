@@ -166,3 +166,33 @@ button.add-comment-btn:hover {
 
 
 
+.text-center-content {
+    text-align: center;
+    min-width: 200px;
+    margin: 0 auto;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    max-width: 250px;
+    max-height: 100px;
+    height: auto;
+    display: block;
+    margin: auto; /* Centruje obrázok v slide */
+}
+
+
+
+
