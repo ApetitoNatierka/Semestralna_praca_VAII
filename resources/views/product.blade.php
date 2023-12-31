@@ -12,26 +12,26 @@
         </div>
     </div>
 
-    <div class="container py-5">
+    <div class="container-fluid py-5">
         <div class="row">
-            <div class="col-md-6  text-center-content">
+            <div class="col-md-6  text-center">
                 <p class="cena">Cena: {{$product->price}} $</p>
                 <p class="kraj">Kraj: {{$product->kraj}} </p>
                 <p class="category">Category: {{$product->category}} </p>
             </div>
-            <div class="col-md-6">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Každý obrázok má vlastný slider -->
-                        <div class="swiper-slide">
-                            <img src="{{ asset('images/animal.png') }}" alt="Obrázok 1"  class="img-fluid mx-auto d-block" >
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('images/moto.png') }}" alt="Obrázok 2"  class="img-fluid mx-auto d-block">
-                        </div>
-                        <!-- Ďalšie obrázky... -->
+            <div class="col-md-6 text-center">
+                <div class="swiper-container text-center-content">
+                    <div class="swiper-wrapper text-center-content">
+                        @forelse ($product->images as $index => $image)
+                            <div class="swiper-slide {{$index == 0 ? 'active' : ''}}">
+                                <img src="{{ asset('storage/' . $image->path) }}" alt="Obrazok" class="img-fluid mx-auto d-block">
+                            </div>
+                        @empty
+                            <div class="swiper-slide">
+                                <p>No images available</p>
+                            </div>
+                        @endforelse
                     </div>
-                    <!-- Navigačné tlačidlá pre prechádzanie obrázkov -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
