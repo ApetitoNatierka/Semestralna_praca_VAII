@@ -15,10 +15,10 @@
                         <a href="/product/{{$products[$i]['id']}}">
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative">
                                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{$products[$i]['name']}}</h3>
-                                    <div class="background-image" style="background-image: url('{{ asset('images/sun-1789653_1280.png') }}');"></div>
+                                    <img src="{{ asset('images/sun-1789653_1280.png') }}" alt="Product Image" class="img-fluid">
                                 </div>
                             </div>
+                            <div class="product-title text-center mt-3">{{ $products[$i]['title'] }}</div>
                         </a>
                     @else
                         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" style="visibility: hidden; height: 0;">
