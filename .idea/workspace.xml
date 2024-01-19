@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="uprava galerie">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="uprava vzhladu produktov">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles_products.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles_products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products_ref.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_ref.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/offers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,15 +235,8 @@
       <workItem from="1703576576921" duration="24569000" />
       <workItem from="1703771502340" duration="4342000" />
       <workItem from="1703843393502" duration="10176000" />
-      <workItem from="1703921118007" duration="32438000" />
-    </task>
-    <task id="LOCAL-00033" summary="pridanie editacie productu">
-      <option name="closed" value="true" />
-      <created>1701365902534</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1701365902534</updated>
+      <workItem from="1703921118007" duration="32614000" />
+      <workItem from="1705681116711" duration="6253000" />
     </task>
     <task id="LOCAL-00034" summary="pridanie editacie productu">
       <option name="closed" value="true" />
@@ -626,7 +622,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704018018922</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="uprava vzhladu produktov">
+      <option name="closed" value="true" />
+      <created>1704023575826</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1704023575826</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,7 +701,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie migracii pre osobne udaje a komenty" />
     <MESSAGE value="pridanie pridavania komentarov" />
     <MESSAGE value="riesenie komentov" />
     <MESSAGE value="pridanie migracie pre offers" />
@@ -722,6 +725,7 @@
     <MESSAGE value="odstranovanie img zo storage" />
     <MESSAGE value="vytvorenie galerie na obrazky" />
     <MESSAGE value="uprava galerie" />
-    <option name="LAST_COMMIT_MESSAGE" value="uprava galerie" />
+    <MESSAGE value="uprava vzhladu produktov" />
+    <option name="LAST_COMMIT_MESSAGE" value="uprava vzhladu produktov" />
   </component>
 </project>

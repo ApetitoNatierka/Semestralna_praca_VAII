@@ -71,6 +71,10 @@ Route::get('/received_offers', [OffersController::class, 'get_received_offers'])
 
 Route::delete('/reject_offer/{offer}', [OffersController::class, 'delete_offer']);
 
+Route::delete('/delete_offer/{offer}', [OffersController::class, 'delete_empty_offer']);
+
+Route::post('/accept_offer/{offer}', [OffersController::class, 'accept_offer']);
+
 
 Route::get('/check_notifications', [OfferNotificationsController::class, 'check_notifications']);
 

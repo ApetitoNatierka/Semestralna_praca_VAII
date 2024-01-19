@@ -15,4 +15,12 @@ class Image extends Model
     {
         return $this->belongsTo(Products::class, 'product_id');
     }
+
+    public function get_product_id() {
+        return $this->attributes['product_id'];
+    }
+
+    public function get_path() {
+        return $this->attributes['path'];
+    }
 }

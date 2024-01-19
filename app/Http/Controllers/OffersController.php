@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Comment;
 use App\Models\OfferNotification;
 use App\Models\Products;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Offers;
 
@@ -58,7 +59,62 @@ class OffersController extends Controller
 
     public function delete_offer(Offers $offer) {
         if (auth()->id() == $offer->user_id || auth()->id() == $offer->to_user) {
+
+            $product = Products::find($offer->product_id);
             $offer->delete($offer);
+
+            $incoming_fields_['description'] = "Offer on product " .$product->title. " not accepted.";
+            $incoming_fields_['suggested_price'] = 0;
+            $incoming_fields_['user_id'] = auth()->id();
+            $incoming_fields_['to_user'] = $offer->user_id;
+            $incoming_fields_['product_id'] = $offer->product_id;
+            $offer = Offers::create($incoming_fields_);
+
+            $incoming_fields2_['from_user'] = auth()->id();
+            $incoming_fields2_['to_user'] = $offer->to_user;
+            $incoming_fields2_['product_id'] = $offer->product_id;
+            $incoming_fields2_['received'] = true;
+            $incoming_fields2_['offer_id'] = $offer->id;
+
+            info($offer->id);
+
+            OfferNotification::create($incoming_fields2_);
+        }
+
+        return redirect('/received_offers');
+    }
+
+    public function delete_empty_offer(Offers $offer) {
+        if (auth()->id() == $offer->user_id || auth()->id() == $offer->to_user) {
+            $offer->delete($offer);
+        }
+
+        return redirect('/received_offers');
+    }
+
+    public function accept_offer(Offers $offer) {
+
+        if (auth()->id() == $offer->user_id || auth()->id() == $offer->to_user) {
+            $offer->delete($offer);
+
+            $product = Products::find($offer->product_id);
+
+            $incoming_fields_['description'] = "Offer on product " . $product->title . " accepted. Contact me on " . auth()->user()->get_email() . ".";
+            $incoming_fields_['suggested_price'] = 0;
+            $incoming_fields_['user_id'] = auth()->id();
+            $incoming_fields_['to_user'] = $offer->user_id;
+            $incoming_fields_['product_id'] = $offer->product_id;
+            $offer = Offers::create($incoming_fields_);
+
+            $incoming_fields2_['from_user'] = auth()->id();
+            $incoming_fields2_['to_user'] = $offer->to_user;
+            $incoming_fields2_['product_id'] = $offer->product_id;
+            $incoming_fields2_['received'] = true;
+            $incoming_fields2_['offer_id'] = $offer->id;
+
+            info($offer->id);
+
+            OfferNotification::create($incoming_fields2_);
         }
         return redirect('/received_offers');
     }

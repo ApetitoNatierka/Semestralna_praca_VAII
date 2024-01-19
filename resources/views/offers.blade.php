@@ -8,16 +8,23 @@
                 <p class="description">{{ $offer->description }}</p>
                 <p class="suggested-price">Suggested Price: ${{ $offer->suggested_price }}</p>
                 @if(auth()->id() == $offer->to_user)
-                    <form action="/delete_product/{{ $offer->product->id }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn--accept">Accept</button>
-                    </form>
-                    <form action="/reject_offer/{{ $offer->id }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn--reject">Reject</button>
-                    </form>
+                    @if(stripos($offer->description, "accepted") === false)
+                        <form action="/accept_offer/{{ $offer->id }}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn--accept">Accept</button>
+                        </form>
+                        <form action="/reject_offer/{{ $offer->id }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn--reject">Reject</button>
+                        </form>
+                    @else
+                        <form action="/delete_offer/{{ $offer->id }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn--reject">Delete</button>
+                        </form>
+                    @endif
                 @endif
             </div>
         @empty

@@ -46,4 +46,16 @@ class User extends Authenticatable
     public function usersProducts() {
         return $this->hasMany(Products::class, 'user_id');
     }
+
+    public function get_email() {
+        return $this->attributes['email'];
+    }
+
+    public function get_name() {
+        return $this->attributes['name'];
+    }
+
+    public function get_password() {
+        return $this->attributes['password'];
+    }
 }
