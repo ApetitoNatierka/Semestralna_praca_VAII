@@ -18,6 +18,7 @@
                 <p class="cena">Cena: {{$product->get_price()}} $</p>
                 <p class="kraj">Kraj: {{$product->get_kraj()}} </p>
                 <p class="category">Category: {{$product->get_category()}} </p>
+                <p class="users_e_mail">E mail: {{$product->user->get_email()}} </p>
             </div>
             <div class="col-md-6 text-center">
                 <div class="swiper-container text-center-content">
