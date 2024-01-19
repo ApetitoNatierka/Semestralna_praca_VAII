@@ -7,7 +7,7 @@
         <div class="card p-3 shadow">
             <h2 class="mb-4">Send Offer</h2>
 
-            <form action="/send_offer/{{$product->id}}" method="POST">
+            <form action="/send_offer/{{$product->get_id()}}" method="POST">
                 @csrf
                 <div class="mb-3">
                     <label for="description" class="form-label">Description:</label>

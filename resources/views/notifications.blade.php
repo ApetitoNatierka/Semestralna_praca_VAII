@@ -5,7 +5,7 @@
     @endphp
 
     <a href="/received_offers">
-        <p class="new_notification">You optained offer from {{$to_user->name}} on product {{$product->title}}</p>
+        <p class="new_notification">You optained offer from {{$to_user->get_name()}} on product {{$product->get_title()}}</p>
     </a>
 @empty
     <p>No new offers.</p>

@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\Storage;
 class ImageController extends Controller
 {
     public function delete_image(Image $image) {
-        $product = Products::find($image->product_id);
-        Storage::delete($image->path);
+        $product = Products::find($image->get_product_id());
+        Storage::delete($image->get_path());
         $image->delete($image);
         return view('new_product', ['product' => $product]);
     }
@@ -26,11 +26,11 @@ class ImageController extends Controller
 
             $newImagePath =  Storage::put('images', $newImage);
 
-            Storage::delete($image->path);
+            Storage::delete($image->get_path());
 
             $image->update(['path' => $newImagePath]);
 
-            $product = Products::find($image->product_id);
+            $product = Products::find($image->get_product_id());
         }
         return view('new_product', ['product' => $product]);
     }

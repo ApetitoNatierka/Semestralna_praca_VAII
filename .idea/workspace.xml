@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="uprava vzhladu produktov">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie gettoviek a funkc. odpovede na offer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OffersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/offers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/offers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Offers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Offers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,15 +235,7 @@
       <workItem from="1703771502340" duration="4342000" />
       <workItem from="1703843393502" duration="10176000" />
       <workItem from="1703921118007" duration="32614000" />
-      <workItem from="1705681116711" duration="6253000" />
-    </task>
-    <task id="LOCAL-00034" summary="pridanie editacie productu">
-      <option name="closed" value="true" />
-      <created>1701366099437</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1701366099437</updated>
+      <workItem from="1705681116711" duration="7217000" />
     </task>
     <task id="LOCAL-00035" summary="pridanie editacie productu">
       <option name="closed" value="true" />
@@ -630,7 +621,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704023575826</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="pridanie gettoviek a funkc. odpovede na offer">
+      <option name="closed" value="true" />
+      <created>1705687624341</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1705687624342</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -701,7 +700,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie pridavania komentarov" />
     <MESSAGE value="riesenie komentov" />
     <MESSAGE value="pridanie migracie pre offers" />
     <MESSAGE value="pridanie modelu Offer" />
@@ -726,6 +724,7 @@
     <MESSAGE value="vytvorenie galerie na obrazky" />
     <MESSAGE value="uprava galerie" />
     <MESSAGE value="uprava vzhladu produktov" />
-    <option name="LAST_COMMIT_MESSAGE" value="uprava vzhladu produktov" />
+    <MESSAGE value="pridanie gettoviek a funkc. odpovede na offer" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie gettoviek a funkc. odpovede na offer" />
   </component>
 </project>

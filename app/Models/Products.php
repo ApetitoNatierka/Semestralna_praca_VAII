@@ -39,4 +39,8 @@ class Products extends Model
     public function get_user_id() {
         return $this->attributes['user_id'];
     }
+
+    public function get_id() {
+        return $this->attributes['id'];
+    }
 }

@@ -44,27 +44,27 @@
 </form>
     </div>
     @elseif(!empty($product))
-        @if(auth()->id() == $product->user_id )
+        @if(auth()->id() == $product->get_user_id() )
             <div class="container-fluid p-4 mt-5">
-                <form class="row g-3" action="/edit_product/{{$product->id}}" method="POST" enctype="multipart/form-data">
+                <form class="row g-3" action="/edit_product/{{$product->get_id()}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="col-md-6">
                         <label for="title" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="title" name="title" value="{{$product->title}}">
+                        <input type="text" class="form-control" id="title" name="title" value="{{$product->get_title()}}">
                     </div>
                     <div class="col-md-6">
                         <label for="price" class="form-label">Price</label>
-                        <input type="text" class="form-control" id="price" name="price" placeholder="Price$" value="{{$product->price}}">
+                        <input type="text" class="form-control" id="price" name="price" placeholder="Price$" value="{{$product->get_price()}}">
                     </div>
                     <div class="col-12">
                         <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control" id="description" placeholder="Description" name="description">{{$product->description}}</textarea>
+                        <textarea class="form-control" id="description" placeholder="Description" name="description">{{$product->get_description()}}</textarea>
                     </div>
                     <div class="col-md-4">
                         <label for="kraj" class="form-label">Kraj</label>
                         <select id="kraj" class="form-select" name="kraj">
-                            <option selected>{{$product->kraj}}</option>
+                            <option selected>{{$product->get_kraj()}}</option>
                             <option>Bratislava</option>
                             <option>Žilina</option>
                             <option>Trnava</option>
@@ -73,7 +73,7 @@
                     <div class="col-md-4">
                         <label for="category" class="form-label">Category</label>
                         <select id="category" class="form-select" name="category">
-                            <option selected>{{$product->category}}</option>
+                            <option selected>{{$product->get_category()}}</option>
                             <option>Moto</option>
                             <option>Animal</option>
                             <option>Sport</option>
@@ -100,15 +100,15 @@
                     @forelse ($product->images as $image)
                         <tr>
                             <td>
-                                <img class="product_image custom_size" src="{{ asset('storage/' . $image->path) }}" alt="Image">
+                                <img class="product_image custom_size" src="{{ asset('storage/' . $image->get_path()) }}" alt="Image">
                             </td>
                             <td>
                                 <!--prevzate z internetu-->
-                                <button class="btn btn-edit" data-toggle="modal" data-target="#editImageModal{{$image->id}}">
+                                <button class="btn btn-edit" data-toggle="modal" data-target="#editImageModal{{$image->get_id()}}">
                                     Edit
                                 </button>
                                 <!--prevzate z internetu-->
-                                <form action="/delete_image/{{$image->id}}" method="POST" style="display: inline-block;">
+                                <form action="/delete_image/{{$image->get_id()}}" method="POST" style="display: inline-block;">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-delete" onclick="return confirm('Are you sure you want to delete this image?')">Delete</button>
@@ -116,17 +116,17 @@
                             </td>
                         </tr>
                         <!--prevzate z internetu-->
-                        <div class="modal fade" id="editImageModal{{$image->id}}" tabindex="-1" role="dialog" aria-labelledby="editImageModalLabel{{$image->id}}" aria-hidden="true">
+                        <div class="modal fade" id="editImageModal{{$image->get_id()}}" tabindex="-1" role="dialog" aria-labelledby="editImageModalLabel{{$image->get_id()}}" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="editImageModalLabel{{$image->id}}">Edit Image</h5>
+                                        <h5 class="modal-title" id="editImageModalLabel{{$image->get_id()}}">Edit Image</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="/edit_image/{{$image->id}}" method="POST" enctype="multipart/form-data">
+                                        <form action="/edit_image/{{$image->get_id()}}" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             @method('PUT')
                                             <div class="form-group">

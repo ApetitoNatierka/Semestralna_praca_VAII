@@ -5,21 +5,21 @@
     <div class="container">
         @forelse ($offers as $offer)
             <div class="offer">
-                <p class="description">{{ $offer->description }}</p>
-                <p class="suggested-price">Suggested Price: ${{ $offer->suggested_price }}</p>
-                @if(auth()->id() == $offer->to_user)
-                    @if(stripos($offer->description, "accepted") === false)
-                        <form action="/accept_offer/{{ $offer->id }}" method="POST">
+                <p class="description">{{ $offer->get_description() }}</p>
+                <p class="suggested-price">Suggested Price: ${{ $offer->get_suggested_price() }}</p>
+                @if(auth()->id() == $offer->get_to_user())
+                    @if(stripos($offer->get_description(), "accepted") === false)
+                        <form action="/accept_offer/{{ $offer->get_id() }}" method="POST">
                             @csrf
                             <button type="submit" class="btn btn--accept">Accept</button>
                         </form>
-                        <form action="/reject_offer/{{ $offer->id }}" method="POST">
+                        <form action="/reject_offer/{{ $offer->get_id() }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn--reject">Reject</button>
                         </form>
                     @else
-                        <form action="/delete_offer/{{ $offer->id }}" method="POST">
+                        <form action="/delete_offer/{{ $offer->get_id() }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn--reject">Delete</button>

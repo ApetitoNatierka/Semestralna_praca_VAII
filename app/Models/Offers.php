@@ -40,4 +40,8 @@ class Offers extends Model
     public function get_to_user() {
         return $this->attributes['to_user'];
     }
+
+    public function get_id() {
+        return $this->attributes['id'];
+    }
 }

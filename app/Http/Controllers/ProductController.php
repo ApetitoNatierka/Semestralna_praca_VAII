@@ -24,7 +24,7 @@ class ProductController extends Controller
 
     public function get_product($product_id) {
         $product = Products::find($product_id);
-        $comments = Comment::where('product_id', $product->id)->latest()->get();
+        $comments = Comment::where('product_id', $product->get_id())->latest()->get();
 
         return view('product', ['product' => $product, 'comments' => $comments]);
     }
@@ -55,7 +55,7 @@ class ProductController extends Controller
 
         Comment::create($incoming_fields_);
         $product = Products::find($product_id);
-        $comments = Comment::where('product_id', $product->id)->latest()->get();
+        $comments = Comment::where('product_id', $product->get_id())->latest()->get();
 
         return view('product', ['product' => $product, 'comments' => $comments]);
     }
@@ -82,7 +82,7 @@ class ProductController extends Controller
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
                 $path = Storage::put('images', $image);
-                Image::create(['path' => $path, 'product_id' => $product->id]);
+                Image::create(['path' => $path, 'product_id' => $product->get_id()]);
             }
         }
 
@@ -116,7 +116,7 @@ class ProductController extends Controller
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
                 $path = Storage::put('images', $image);
-                Image::create(['path' => $path, 'product_id' => $product->id]);
+                Image::create(['path' => $path, 'product_id' => $product->get_id()]);
             }
         }
 
@@ -134,10 +134,10 @@ class ProductController extends Controller
 
     public function delete_comment(Comment $comment) {
 
-        $product = Products::find($comment->product_id);
-        $comments = Comment::where('product_id', $product->id)->latest()->get();
+        $product = Products::find($comment->get_product_id());
+        $comments = Comment::where('product_id', $product->get_id())->latest()->get();
 
-        if(auth()->id() === $comment->user_id) {
+        if(auth()->id() === $comment->get_user_id()) {
             $comment->delete();
         }
 

@@ -23,4 +23,8 @@ class Image extends Model
     public function get_path() {
         return $this->attributes['path'];
     }
+
+    public function get_id() {
+        return $this->attributes['id'];
+    }
 }
