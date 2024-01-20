@@ -106,7 +106,7 @@
                     <ul class="dropdown-menu">
                         <li><h6 class="dropdown-header">ZÁPAD</h6></li>
                         <li>
-                            <a class="dropdown-item">
+                            <a id="bratislavaDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Bratislava">
                                 Bratislava
                                 <label class="form-check-label float-end">
                                     <input class="form-check-input slider" type="checkbox">
@@ -114,7 +114,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item">
+                            <a id="trnavaDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Trnava">
                                 Trnava
                                 <label class="form-check-label float-end">
                                     <input class="form-check-input slider" type="checkbox">
@@ -122,7 +122,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item">
+                            <a id="nitraDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Nitra">
                                 Nitra
                                 <label class="form-check-label float-end">
                                     <input class="form-check-input slider" type="checkbox">
@@ -130,7 +130,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item">
+                            <a id="trencinDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Trenčín">
                                 Trenčín
                                 <label class="form-check-label float-end">
                                     <input class="form-check-input slider" type="checkbox">
@@ -139,7 +139,7 @@
                         </li>
                         <li><h6 class="dropdown-header">STRED</h6></li>
                         <li>
-                            <a class="dropdown-item">
+                            <a id="zilinaDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Žilina">
                                 Žilina
                                 <label class="form-check-label float-end">
                                     <input class="form-check-input slider" type="checkbox">
@@ -147,7 +147,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item">
+                            <a id="banskaBystricaDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Banská Bystrica">
                                 Banská Bystrica
                                 <label class="form-check-label float-end">
                                     <input class="form-check-input slider" type="checkbox">
@@ -156,7 +156,7 @@
                         </li>
                         <li><h6 class="dropdown-header">VÝCHOD</h6></li>
                         <li>
-                            <a class="dropdown-item">
+                            <a id="presovDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Prešov">
                                 Prešov
                                 <label class="form-check-label float-end">
                                     <input class="form-check-input slider" type="checkbox">
@@ -164,14 +164,16 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item">
+                            <a id="kosiceDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Košice">
                                 Košice
                                 <label class="form-check-label float-end">
                                     <input class="form-check-input slider" type="checkbox">
                                 </label>
                             </a>
                         </li>
-
+                        <li class="d-flex justify-content-center">
+                            <button class="btn btn-primary apply-filter-btn">Apply</button>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -184,6 +186,8 @@
 <script src="{{ asset('js/notifications.js') }}"></script>
 <script src="{{ asset('js/slider.js') }}"></script>
 <script src="{{asset('js/gallery.js')}}"></script>
+<script src="{{asset('js/filter_by_region.js')}}"></script>
+
 </html>
 
 

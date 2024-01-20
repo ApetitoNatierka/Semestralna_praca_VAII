@@ -17,7 +17,10 @@ $(document).ready(function () {
                 page: page,
                 search: $('input[name="search"]').val(),
                 min_price: $('#min-price').text(),
-                max_price: $('#max-price').text()
+                max_price: $('#max-price').text(),
+                selectedRegions: $('.dropdown-item input[type="checkbox"]:checked').map(function () {
+                    return $(this).closest('.dropdown-item').data('region');
+                }).get()
             },
             success: function (response) {
                 if (response && response.trim() !== '') {

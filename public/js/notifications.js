@@ -46,4 +46,4 @@ $(window).on('popstate', function() {
 });
 
 //prevzate z internetu
-setInterval(checkForNotifications, 100);
+setInterval(checkForNotifications, 1000);

@@ -166,6 +166,12 @@ class ProductController extends Controller
 
         $productsQuery = Products::query();
 
+        $selectedRegions = $request->input('regions', []);
+
+        if (!empty($selectedRegions)) {
+            $productsQuery->whereIn('kraj', $selectedRegions);
+        }
+
         if ($searchTerm) {
             $productsQuery->where(function ($query) use ($searchTerm) {
                 $query->where('description', 'like', '%' . $searchTerm . '%')
@@ -196,6 +202,12 @@ class ProductController extends Controller
 
         $productsQuery = Products::query();
 
+        $selectedRegions = $request->input('regions', []);
+
+        if (!empty($selectedRegions)) {
+            $productsQuery->whereIn('kraj', $selectedRegions);
+        }
+
         if ($searchTerm) {
             $productsQuery->where(function ($query) use ($searchTerm) {
                 $query->where('description', 'like', '%' . $searchTerm . '%')
@@ -213,6 +225,40 @@ class ProductController extends Controller
             return response()->json(['no_more_data' => true]);
         }
 
+        return view('products_ref', ['products' => $products]);
+    }
+
+    public function get_products_by_region(Request $request) {
+        $page = $request->input('page', 1);
+        $perPage = 12;
+        $minPrice = $request->input('min_price');
+        $maxPrice = $request->input('max_price');
+        $searchTerm = $request->input('search', '');
+
+        $productsQuery = Products::query();
+
+        $selectedRegions = $request->input('regions', []);
+
+        if (!empty($selectedRegions)) {
+            $productsQuery->whereIn('kraj', $selectedRegions);
+        }
+
+        if ($searchTerm) {
+            $productsQuery->where(function ($query) use ($searchTerm) {
+                $query->where('description', 'like', '%' . $searchTerm . '%')
+                    ->orWhere('title', 'like', '%' . $searchTerm . '%');
+            });
+        }
+
+        if ($minPrice !== null && $maxPrice !== null) {
+            $productsQuery->whereBetween('price', [$minPrice, $maxPrice]);
+        }
+
+        $products = $productsQuery->paginate($perPage, ['*'], 'page', $page);
+
+        if ($products->isEmpty()) {
+            return response()->json(['no_more_data' => true]);
+        }
         return view('products_ref', ['products' => $products]);
     }
 

@@ -48,6 +48,8 @@ Route::get('/products_by_price', [ProductController::class, 'get_products_by_pri
 
 Route::get('/load_more_products', [ProductController::class, 'load_more_products']);
 
+Route::get('/products_by_region', [ProductController::class, 'get_products_by_region']);
+
 Route::delete('/delete_product/{product}', [ProductController::class, 'delete_product']);
 
 Route::delete('/delete_comment/{comment}', [ProductController::class, 'delete_comment']);

@@ -16,6 +16,10 @@ $(function() {
 });
 
 function filterProducts(minPrice, maxPrice, searchQuery) {
+    var selectedRegions = $('.dropdown-item input[type="checkbox"]:checked').map(function () {
+        return $(this).closest('.dropdown-item').data('region');
+    }).get();
+
     $.ajax({
         url: '/products_by_price',
         method: 'GET',
@@ -23,8 +27,10 @@ function filterProducts(minPrice, maxPrice, searchQuery) {
             min_price: minPrice,
             max_price: maxPrice,
             search: searchQuery,
+            selectedRegions: selectedRegions
         },
         success: function(response) {
+            console.log(selectedRegions);
             $('#product-container').html(response);
         },
         error: function(error) {
