@@ -23,9 +23,9 @@
     <div class="container-fluid">
         <img src="{{ asset('images/sun-1789653_1280-1.png') }}" alt="BazarSlnko Logo"/>
         <a class="navbar-brand" href="/">BazarSlnko</a>
-        <form role="search" action="/products_search" method="POST">
+        <form role="search" action="/products_search" method="POST" class="search-form">
             @csrf
-            <input class="form-control" type="search" name="search" placeholder="Search" aria-label="Search">
+            <input class="form-control" type="search" name="search" value="{{ $searchTerm ?? '' }}" placeholder="Search" aria-label="Search">
         </form>
         <!--prevzate z internetu -->
         <button id="notification-button" class="btn btn-secondary">

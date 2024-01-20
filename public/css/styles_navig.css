@@ -72,6 +72,9 @@ form[role="search"] {
     background-color: #E0E0E0;
 }
 
+#notification-button {
+    margin-right: 10px;
+}
 .notification-overlay {
     display: none;
     position: fixed;

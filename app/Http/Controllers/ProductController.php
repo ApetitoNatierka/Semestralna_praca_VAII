@@ -8,6 +8,7 @@ use App\Models\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\View;
 
 class ProductController extends Controller
 {
@@ -149,6 +150,8 @@ class ProductController extends Controller
         $perPage = 12;
         $searchTerm = $request->input('search');
 
+        View::share('searchTerm', $searchTerm);
+
         $products = Products::where('description', 'like', '%' . $searchTerm . '%')->orWhere('title', 'like', '%' . $searchTerm . '%')->paginate($perPage, ['*'], 'page', $page);
 
         return view('products', ['products' => $products]);
@@ -159,9 +162,26 @@ class ProductController extends Controller
         $perPage = 12;
         $minPrice = $request->input('min_price');
         $maxPrice = $request->input('max_price');
+        $searchTerm = $request->input('search', '');
 
-        $products = Products::whereBetween('price', [$minPrice, $maxPrice])->paginate($perPage, ['*'], 'page', $page);
+        $productsQuery = Products::query();
 
+        if ($searchTerm) {
+            $productsQuery->where(function ($query) use ($searchTerm) {
+                $query->where('description', 'like', '%' . $searchTerm . '%')
+                    ->orWhere('title', 'like', '%' . $searchTerm . '%');
+            });
+        }
+
+        if ($minPrice !== null && $maxPrice !== null) {
+            $productsQuery->whereBetween('price', [$minPrice, $maxPrice]);
+        }
+
+        $products = $productsQuery->paginate($perPage, ['*'], 'page', $page);
+
+        if ($products->isEmpty()) {
+            return response()->json(['no_more_data' => true]);
+        }
         return view('products_ref', ['products' => $products]);
     }
 

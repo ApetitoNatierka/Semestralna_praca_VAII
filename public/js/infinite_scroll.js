@@ -15,7 +15,7 @@ $(document).ready(function () {
             method: 'GET',
             data: {
                 page: page,
-                search: $('#search-input').val(),
+                search: $('input[name="search"]').val(),
                 min_price: $('#min-price').text(),
                 max_price: $('#max-price').text()
             },
