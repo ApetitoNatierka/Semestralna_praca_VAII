@@ -12,6 +12,11 @@
     <title>Sign in</title>
 </head>
 <body>
+@if(session('loginError'))
+    <script>
+        alert("{{ session('loginError') }}");
+    </script>
+@endif
 <div class="login-container">
   <img src="{{ asset('images/sun-1789653_1280.png') }}" alt="Logo">
   <h1>Sign in</h1>

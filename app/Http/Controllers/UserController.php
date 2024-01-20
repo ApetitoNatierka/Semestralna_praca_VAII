@@ -18,9 +18,10 @@ class UserController extends Controller
 
         if (auth()->attempt(['name' => $incoming_fields_['loginname'], 'password' => $incoming_fields_['loginpassword']])) {
             $request->session()->regenerate();
+            return redirect('/');
         }
 
-        return redirect('/');
+        return redirect('/sign_in')->with('loginError', 'Invalid login credentials.');
     }
 
     public function register(Request $request): string
