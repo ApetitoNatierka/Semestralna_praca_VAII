@@ -19,10 +19,15 @@
                             <a href="/product/{{$products[$i]['id']}}">
                                 <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative">
                                     <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                        <img src="{{ asset('storage/images/3GKIc68hRiXmBv2JrzwGFaZG9Md0XQ91hi11iUoN.jpg') }}" alt="Product Image" class="img-fluid">
+                                        @php($product = $products[$i])
+                                        @if($product->getFirstImageAlphabetically())
+                                            <img src="{{ asset('storage/' .$product->getFirstImageAlphabetically()->get_path()) }}" alt="Product Image" class="img-fluid">
+                                        @else
+                                            <img src="{{ asset('images/sun-1789653_1280.png') }}" alt="Product Image" class="img-fluid">
+                                        @endif
                                     </div>
                                 </div>
-                                <div class="product-title text-center mt-3">{{ $products[$i]['title'] }}</div>
+                                <div class="product-title text-center mt-3">{{ $products[$i]['title'] }} | {{ $products[$i]['price'] }} €</div>
                             </a>
                         @else
                             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg position-relative" style="visibility: hidden; height: 0;">

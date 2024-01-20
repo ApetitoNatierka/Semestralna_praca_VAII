@@ -48,4 +48,11 @@ class Products extends Model
     public function get_id() {
         return $this->attributes['id'];
     }
+
+    public function getFirstImageAlphabetically()
+    {
+        $images = $this->images()->orderBy('path', 'asc')->get();
+
+        return $images->first();
+    }
 }
