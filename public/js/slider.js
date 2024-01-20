@@ -21,7 +21,7 @@ function filterProducts(minPrice, maxPrice, searchQuery) {
     }).get();
 
     $.ajax({
-        url: '/products_by_price',
+        url: '/load_more_products',
         method: 'GET',
         data: {
             min_price: minPrice,

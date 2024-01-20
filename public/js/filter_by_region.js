@@ -8,7 +8,7 @@ $(document).ready(function () {
         }).get();
 
         $.ajax({
-            url: '/products_by_region',
+            url: '/load_more_products',
             method: 'GET',
             data: {
                 min_price: $('#min-price').text(),

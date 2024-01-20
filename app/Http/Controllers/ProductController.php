@@ -157,6 +157,7 @@ class ProductController extends Controller
         return view('products', ['products' => $products]);
     }
 
+    /*
     public function get_products_by_price(Request $request) {
         $page = $request->input('page', 1);
         $perPage = 12;
@@ -190,6 +191,7 @@ class ProductController extends Controller
         }
         return view('products_ref', ['products' => $products]);
     }
+*/
 
     public function load_more_products(Request $request)
     {
@@ -228,6 +230,7 @@ class ProductController extends Controller
         return view('products_ref', ['products' => $products]);
     }
 
+    /*
     public function get_products_by_region(Request $request) {
         $page = $request->input('page', 1);
         $perPage = 12;
@@ -261,5 +264,5 @@ class ProductController extends Controller
         }
         return view('products_ref', ['products' => $products]);
     }
-
+*/
 }
