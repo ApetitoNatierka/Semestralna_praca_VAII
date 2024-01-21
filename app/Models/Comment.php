@@ -24,4 +24,7 @@ class Comment extends Model
         return $this->attributes['user_id'];
     }
 
+    public function get_id() {
+        return $this->attributes['id'];
+    }
 }
