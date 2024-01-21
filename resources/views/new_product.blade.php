@@ -24,6 +24,11 @@
                 <option selected>Bratislava</option>
                 <option>Žilina</option>
                 <option>Trnava</option>
+                <option>Trenčín</option>
+                <option>Banská Bystrica</option>
+                <option>Prešov</option>
+                <option>Košice</option>
+                <option>Nitra</option>
             </select>
         </div>
     <div class="col-md-4">

@@ -102,9 +102,9 @@
                 <li>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Town</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Region</a>
                     <ul class="dropdown-menu">
-                        <li><h6 class="dropdown-header">ZÁPAD</h6></li>
+                        <li><h6 class="dropdown-header">WEST</h6></li>
                         <li>
                             <a id="bratislavaDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Bratislava">
                                 Bratislava
@@ -137,7 +137,7 @@
                                 </label>
                             </a>
                         </li>
-                        <li><h6 class="dropdown-header">STRED</h6></li>
+                        <li><h6 class="dropdown-header">MIDDLE</h6></li>
                         <li>
                             <a id="zilinaDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Žilina">
                                 Žilina
@@ -154,7 +154,7 @@
                                 </label>
                             </a>
                         </li>
-                        <li><h6 class="dropdown-header">VÝCHOD</h6></li>
+                        <li><h6 class="dropdown-header">EAST</h6></li>
                         <li>
                             <a id="presovDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-region="Prešov">
                                 Prešov
@@ -171,10 +171,40 @@
                                 </label>
                             </a>
                         </li>
-                        <li class="d-flex justify-content-center">
-                            <button class="btn btn-primary apply-filter-btn">Apply</button>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
+                    <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header">CATEGORIES</h6></li>
+                        <li>
+                            <a id="motoDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-category="Moto">
+                                Moto
+                                <label class="form-check-label float-end">
+                                    <input class="form-check-input slider" type="checkbox">
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="animalDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-category="Animal">
+                                Animal
+                                <label class="form-check-label float-end">
+                                    <input class="form-check-input slider" type="checkbox">
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="sportDropdownItem" class="dropdown-item" data-toggle="no-dropdown" data-category="Sport">
+                                Sport
+                                <label class="form-check-label float-end">
+                                    <input class="form-check-input slider" type="checkbox">
+                                </label>
+                            </a>
                         </li>
                     </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="navbar-toggler btn btn-primary apply-filter-btn">Filter</button>
                 </li>
             </ul>
         </div>

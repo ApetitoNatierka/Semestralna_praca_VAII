@@ -169,9 +169,14 @@ class ProductController extends Controller
         $productsQuery = Products::query();
 
         $selectedRegions = $request->input('regions', []);
+        $selectedCategories = $request->input('categories', []);
 
         if (!empty($selectedRegions)) {
             $productsQuery->whereIn('kraj', $selectedRegions);
+        }
+
+        if (!empty($selectedCategories)) {
+            $productsQuery->whereIn('category', $selectedCategories);
         }
 
         if ($searchTerm) {

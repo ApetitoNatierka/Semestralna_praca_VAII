@@ -9,6 +9,10 @@ $(document).ready(function () {
     });
 
     function loadMoreProducts(page) {
+        var selectedCategories = $('.dropdown-item input[type="checkbox"]:checked').map(function () {
+            return $(this).closest('.dropdown-item').data('category');
+        }).get();
+
         $.ajax({
             url: '/load_more_products',
             method: 'GET',
@@ -19,10 +23,11 @@ $(document).ready(function () {
                 max_price: $('#max-price').text(),
                 regions: $('.dropdown-item input[type="checkbox"]:checked').map(function () {
                     return $(this).closest('.dropdown-item').data('region');
-                }).get()
+                }).get(),
+                categories: selectedCategories,
             },
             success: function (response) {
-                console.log(response);
+                console.log(selectedCategories);
                 if (response && response.trim() !== '') {
                     $('#products-container').append(response);
                 }

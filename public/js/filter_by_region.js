@@ -7,6 +7,11 @@ $(document).ready(function () {
             return $(this).closest('.dropdown-item').data('region');
         }).get();
 
+        var selectedCategories = $('.dropdown-item input[type="checkbox"]:checked').map(function () {
+            return $(this).closest('.dropdown-item').data('category');
+        }).get();
+
+
         $.ajax({
             url: '/load_more_products',
             method: 'GET',
@@ -14,10 +19,11 @@ $(document).ready(function () {
                 min_price: $('#min-price').text(),
                 max_price: $('#max-price').text(),
                 search: $('input[name="search"]').val(),
-                regions: selectedRegions
+                regions: selectedRegions,
+                categories: selectedCategories,
             },
             success: function (response) {
-                console.log(response);
+                console.log(selectedCategories);
                 if (response && response.trim() !== '') {
                     $('#products-container').replaceWith(response);
                 }

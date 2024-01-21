@@ -20,6 +20,10 @@ function filterProducts(minPrice, maxPrice, searchQuery) {
         return $(this).closest('.dropdown-item').data('region');
     }).get();
 
+    var selectedCategories = $('.dropdown-item input[type="checkbox"]:checked').map(function () {
+        return $(this).closest('.dropdown-item').data('category');
+    }).get();
+
     $.ajax({
         url: '/load_more_products',
         method: 'GET',
@@ -27,7 +31,8 @@ function filterProducts(minPrice, maxPrice, searchQuery) {
             min_price: minPrice,
             max_price: maxPrice,
             search: searchQuery,
-            regions: selectedRegions
+            regions: selectedRegions,
+            categories: selectedCategories,
         },
         success: function(response) {
             console.log(response);
