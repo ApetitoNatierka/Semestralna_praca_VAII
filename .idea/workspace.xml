@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="odstranenie prebytocneho">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="pridanie gettovky">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/notifications.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,15 +236,8 @@
       <workItem from="1705689513406" duration="16000" />
       <workItem from="1705689681673" duration="120000" />
       <workItem from="1705689958360" duration="12000" />
-      <workItem from="1705733238485" duration="30969000" />
-    </task>
-    <task id="LOCAL-00047" summary="pridanie infinite scroll">
-      <option name="closed" value="true" />
-      <created>1701604535389</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1701604535389</updated>
+      <workItem from="1705733238485" duration="31262000" />
+      <workItem from="1705851977934" duration="2840000" />
     </task>
     <task id="LOCAL-00048" summary="validacia na strane klienta pri registracii">
       <option name="closed" value="true" />
@@ -629,7 +623,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705838875933</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="pridanie gettovky">
+      <option name="closed" value="true" />
+      <created>1705839267125</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1705839267125</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,7 +702,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie controllera pre notifikacie" />
     <MESSAGE value="pridanie stlpcov do offer notification" />
     <MESSAGE value="pridanie funkcionality notifikacii" />
     <MESSAGE value="uprava reject offers" />
@@ -725,6 +726,7 @@
     <MESSAGE value="filtrovanie poocou category" />
     <MESSAGE value="uprava startup" />
     <MESSAGE value="odstranenie prebytocneho" />
-    <option name="LAST_COMMIT_MESSAGE" value="odstranenie prebytocneho" />
+    <MESSAGE value="pridanie gettovky" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridanie gettovky" />
   </component>
 </project>

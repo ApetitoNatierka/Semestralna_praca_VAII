@@ -147,7 +147,7 @@ class ProductController extends Controller
 
     public function get_products_search(Request $request) {
         $page = $request->input('page', 1);
-        $perPage = 12;
+        $perPage = 30;
         $searchTerm = $request->input('search');
 
         View::share('searchTerm', $searchTerm);
