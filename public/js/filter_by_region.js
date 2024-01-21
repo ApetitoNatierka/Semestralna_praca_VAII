@@ -34,3 +34,16 @@ $(document).ready(function () {
         });
     }
 });
+
+$(document).ready(function () {
+    $('.category-link').click(function () {
+        var category = $(this).text().trim().toLowerCase();
+        console.log(category);
+
+        $('.dropdown-item input[type="checkbox"]').prop('checked', false);
+
+        $('#' + category + 'DropdownItem input[type="checkbox"]').prop('checked', true);
+
+        filterProducts();
+    });
+});

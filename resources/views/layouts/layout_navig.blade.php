@@ -41,23 +41,23 @@
         @auth
             <a href="/products_user">
                 @csrf
-                <label class="moje-inzeraty" >Moje inzeráty</label>
+                <label class="moje-inzeraty" >My Advertisements</label>
             </a>
         @else
             <a href="/sign_in">
                 @csrf
-                <label class="moje-inzeraty" >Moje inzeráty</label>
+                <label class="moje-inzeraty" >My Advertisements</label>
             </a>
         @endauth
         @auth
             <a href="/new_product">
                 @csrf
-                <label class="pridat_inzerat" >Pridať inzerát</label>
+                <label class="pridat_inzerat" >Add Advertisement</label>
             </a>
         @else
             <a href="/sign_in">
                 @csrf
-                <label class="pridat_inzerat" >Pridať inzerát</label>
+                <label class="pridat_inzerat" >Add Advertisement</label>
             </a>
         @endauth
         @auth
