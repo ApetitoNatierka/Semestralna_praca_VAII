@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="zobrazenie obrazka na produktoch">
+    <list default="true" id="c2295c71-130d-4a53-9a76-6103eaa2d138" name="Changes" comment="funkcionalita vyhodenia erroru pri neuspesnom prihlaseni">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/filter_by_region.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/filter_by_region.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/infinite_scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/infinite_scroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products_ref.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products_ref.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,15 +240,7 @@
       <workItem from="1705689513406" duration="16000" />
       <workItem from="1705689681673" duration="120000" />
       <workItem from="1705689958360" duration="12000" />
-      <workItem from="1705733238485" duration="16353000" />
-    </task>
-    <task id="LOCAL-00042" summary="vyhladavanie cez search">
-      <option name="closed" value="true" />
-      <created>1701540004760</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1701540004760</updated>
+      <workItem from="1705733238485" duration="22306000" />
     </task>
     <task id="LOCAL-00043" summary="uprava pohladu">
       <option name="closed" value="true" />
@@ -630,7 +626,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705749423281</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="funkcionalita vyhodenia erroru pri neuspesnom prihlaseni">
+      <option name="closed" value="true" />
+      <created>1705753523717</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1705753523717</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -701,7 +705,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridanie moznosti vytvorenia poziadavky" />
     <MESSAGE value="pridanie do dropdown rec/sent offers" />
     <MESSAGE value="funkcionalita notofication" />
     <MESSAGE value="model offer notification" />
@@ -726,6 +729,7 @@
     <MESSAGE value="uprava filtrovania cez kraje" />
     <MESSAGE value="odstranenie prebytocnych metod" />
     <MESSAGE value="zobrazenie obrazka na produktoch" />
-    <option name="LAST_COMMIT_MESSAGE" value="zobrazenie obrazka na produktoch" />
+    <MESSAGE value="funkcionalita vyhodenia erroru pri neuspesnom prihlaseni" />
+    <option name="LAST_COMMIT_MESSAGE" value="funkcionalita vyhodenia erroru pri neuspesnom prihlaseni" />
   </component>
 </project>

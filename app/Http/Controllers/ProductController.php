@@ -160,7 +160,7 @@ class ProductController extends Controller
     public function load_more_products(Request $request)
     {
         $page = $request->input('page', 1);
-        $perPage = 12;
+        $perPage = 30;
 
         $searchTerm = $request->input('search', '');
         $minPrice = $request->input('min_price', null);
@@ -186,10 +186,6 @@ class ProductController extends Controller
         }
 
         $products = $productsQuery->paginate($perPage, ['*'], 'page', $page);
-
-        if ($products->isEmpty()) {
-            return "No";
-        }
 
         return view('products_ref', ['products' => $products]);
     }

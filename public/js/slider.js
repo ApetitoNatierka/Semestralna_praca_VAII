@@ -2,8 +2,8 @@ $(function() {
     $("#price-slider").slider({
         range: true,
         min: 0,
-        max: 300000,
-        values: [0, 300000],
+        max: 50000,
+        values: [0, 50000],
         slide: function(event, ui) {
             $("#min-price").text(ui.values[0]);
             $("#max-price").text(ui.values[1]);
@@ -27,11 +27,13 @@ function filterProducts(minPrice, maxPrice, searchQuery) {
             min_price: minPrice,
             max_price: maxPrice,
             search: searchQuery,
-            selectedRegions: selectedRegions
+            regions: selectedRegions
         },
         success: function(response) {
-            console.log(selectedRegions);
-            $('#product-container').html(response);
+            console.log(response);
+            if (response && response.trim() !== '') {
+                $('#products-container').replaceWith(response);
+            }
         },
         error: function(error) {
             console.error(error);

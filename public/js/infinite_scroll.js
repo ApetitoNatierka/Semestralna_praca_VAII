@@ -1,6 +1,5 @@
 $(document).ready(function () {
     let page = 1;
-    const perPage = 30;
 
     $(window).scroll(function () {
         if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
@@ -18,14 +17,14 @@ $(document).ready(function () {
                 search: $('input[name="search"]').val(),
                 min_price: $('#min-price').text(),
                 max_price: $('#max-price').text(),
-                selectedRegions: $('.dropdown-item input[type="checkbox"]:checked').map(function () {
+                regions: $('.dropdown-item input[type="checkbox"]:checked').map(function () {
                     return $(this).closest('.dropdown-item').data('region');
                 }).get()
             },
             success: function (response) {
+                console.log(response);
                 if (response && response.trim() !== '') {
-                    $('#product-container').append(response);
-                    console.log(response);
+                    $('#products-container').append(response);
                 }
             },
             error: function (error) {

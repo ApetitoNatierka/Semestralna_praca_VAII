@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles_products.css') }}">
     <script src="{{ asset('js/infinite_scroll.js') }}"></script>
     <div id="product-container">
-    <div class="container py-5">
+    <div id="products-container" class="container py-5">
         @php
             $productCount = count($products);
             $emptyCardsCount = $productCount % 3 === 0 ? 0 : 3 - ($productCount % 3);

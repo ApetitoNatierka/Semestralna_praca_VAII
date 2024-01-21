@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{{ asset('css/styles_products.css') }}">
-<div class="container py-5">
+<div id="products-container" class="container py-5">
     @php
         $productCount = count($products);
         $emptyCardsCount = $productCount % 3 === 0 ? 0 : 3 - ($productCount % 3);
@@ -38,4 +38,9 @@
             </div>
         @endif
     @endfor
+    @if($productCount == 0)
+        <div id="products-container" class="container py-5">
+
+        </div>
+    @endif
 </div>

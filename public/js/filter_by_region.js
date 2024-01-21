@@ -17,8 +17,10 @@ $(document).ready(function () {
                 regions: selectedRegions
             },
             success: function (response) {
-                console.log(selectedRegions);
-                $('#product-container').html(response);
+                console.log(response);
+                if (response && response.trim() !== '') {
+                    $('#products-container').replaceWith(response);
+                }
             },
             error: function (error) {
                 console.error(error);
